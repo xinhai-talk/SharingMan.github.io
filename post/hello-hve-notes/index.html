@@ -62,7 +62,7 @@
             </h2>
             <div class="post-info">
               <time class="post-time">
-                · 2018-12-11 ·
+                · 2018-12-10 ·
               </time>
               
                 <a href="https://SharingMan.github.io/tag/hvenotes" class="post-tags">
@@ -95,6 +95,32 @@
     
         
 
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: '9dec816ba8a9f0e05f28',
+    clientSecret: '64a76aeb8bc4756b207fcc6653c223d9bdd85cea',
+    repo: 'SharingMan.github.io',
+    owner: 'SharingMan',
+    admin: ['SharingMan'],
+    id: location.pathname,      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
         
     
         <div class="site-footer">
