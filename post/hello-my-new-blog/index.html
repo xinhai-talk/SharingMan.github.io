@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>Hello My New Blog | Xinhai Home</title>
+<meta name="description" content="求知若饥 虚心若愚">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="shortcut icon" href="https://SharingMan.github.io/favicon.ico">
+<link rel="stylesheet" href="https://SharingMan.github.io/styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://SharingMan.github.io">
+        <img src="https://SharingMan.github.io/images/avatar.png" class="site-logo">
+        <h1 class="site-title">Xinhai Home</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="site-description">
+      求知若饥 虚心若愚
+    </div>
+    <div class="site-footer">
+      Powered by Hve Notes
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">Hello My New Blog</h2>
+            <div class="post-date">2019-03-04</div>
+            
+              <div class="feature-container" style="background-image: url('https://SharingMan.github.io/post-images/hello-my-new-blog.jpg')">
+              </div>
+            
+            <div class="post-content">
+              <p>今晚是个难忘的日子，自己仅凭一己之力，看着教程，搭建了正真意义上属于自己的的网页。</p>
+<!-- more -->
+
+<p>当我把 <a href="http://www.ixinhai.cn">www.ixinhai.cn</a> 输入到浏览器中，眼前出现了我的网页，wow，amazing！<br><img src="https://SharingMan.github.io/post-images/1551636866577.jpg" alt=""></p>
+<p>这是我第一次独立搭建起了自己的独立blog，实数不易，但真的很是激动，甚至无语言表。</p>
+<p>若我要不折腾，我的blog将永远不会出现，虽然遇到很多困难，但还好，一路上，总有些开源er，他们是那么可爱，分享他们经验，最终我通过实践一一验证，我的blog终于上线。</p>
+<p>感谢Github，感谢Hve，感谢互联网网友。</p>
+<p>This my first step from 0 to 1，But  I believe I can move on.</p>
+<blockquote>
+<p><strong>爱上互联网，爱上前端，做我想做，通过代码改变世界。</strong></p>
+</blockquote>
+<p><img src="https://SharingMan.github.io/post-images/1551636885381.jpg" alt=""></p>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://SharingMan.github.io/tag/QNDSmNubT" class="tag">
+                    感想
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://SharingMan.github.io/post/hello-hve-notes">
+                  <h3 class="post-title">
+                    Hello Hve Notes
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+  
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '077dfb7156577dd3cc32',
+        clientSecret: '78906b0b9327799977ddac38548e452eedc230dc',
+        repo: 'SharingMan.github.io',
+        owner: 'SharingMan',
+        admin: ['SharingMan'],
+        id: location.pathname,      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>
