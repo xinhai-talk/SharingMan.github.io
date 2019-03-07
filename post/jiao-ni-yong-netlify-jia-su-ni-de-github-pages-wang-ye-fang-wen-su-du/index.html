@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>教你用Netlify加速你的Github pages 网页访问速度 | Xinhai Home</title>
+<meta name="description" content="求知若饥 虚心若愚">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="shortcut icon" href="https://SharingMan.github.io/favicon.ico">
+<link rel="stylesheet" href="https://SharingMan.github.io/styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://SharingMan.github.io">
+        <img src="https://SharingMan.github.io/images/avatar.png" class="site-logo">
+        <h1 class="site-title">Xinhai Home</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="site-description">
+      求知若饥 虚心若愚
+    </div>
+    <div class="site-footer">
+      Powered by Hve Notes
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">教你用Netlify加速你的Github pages 网页访问速度</h2>
+            <div class="post-date">2019-03-07</div>
+            
+              <div class="feature-container" style="background-image: url('https://SharingMan.github.io/post-images/jiao-ni-yong-netlify-jia-su-ni-de-github-pages-wang-ye-fang-wen-su-du.gif')">
+              </div>
+            
+            <div class="post-content">
+              <div class="postBody">
+            <div id="cnblogs_post_body" class="blogpost-body"><p>最近在github pages 上部署了自己的个人网站，看到自己的网页用Hve发布出来，欣喜若狂，但与之而来的问题就是，页面加载太慢，为了解决这个问题，在Hve社群中，我们有爱的群主给出了他的解决方案——用Netlify。^_^
+
+<p>netlify则是国外一家提供静态网络托管服务的综合平台，专注于静态网站托管的web服务平台，可以完美的取代Coding。 Netlify完美且免费支持的ssl、域名绑定、http/2和TLS。最重要的就是，管理方式用git方法传递给github、gitlab或者是Bitbucket，然后Netlify就能自动编译并生成静态网站。</p></p>
+<p>&nbsp;</p>
+<p><strong>一、使用github或者gitlab登陆netlify</strong></p>
+<p>首先，打开netlify网站(https://app.netlify.com/)</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/rZd1wPibx7PemGDbBG4t2OFxn8VuFvxm5AsjqSEuwwLuTiaw2nWZMlG11hZlno61Hujt1o1dTbsPyu7HXLmt21tw/640?wx_fmt=png" alt="" width="350" align="left"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>然后使用github或者gitlab账号登录。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/rZd1wPibx7PemGDbBG4t2OFxn8VuFvxm5MlxAVE5Wqeu6WFuib05vS96mmcljApFe6ktGP1lDyyI3xI0cam0TYnA/640?wx_fmt=png" alt="" width="350"></p>
+<p>&nbsp;</p>
+<p><strong>二、根据github/gitlab仓库创建网站</strong></p>
+<p>点击New site from Git按钮：</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/rZd1wPibx7PemGDbBG4t2OFxn8VuFvxm5Iy1qiayjXeMJ2CmHDBRibmyB6Uv0UWTOrphKTe7SOJicATjkXicJRVCh5w/640?wx_fmt=png" alt="" width="350"></p>
+<p>根据你的仓库所在平台选择，以下三选一：</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/rZd1wPibx7PemGDbBG4t2OFxn8VuFvxm5vuuAialPKeaqJ6rrzMRtibkG5REj0cUoJcgLjjMgyuhePXZrjwKOAvyg/640?wx_fmt=png" alt="" width="350"></p>
+<p>选择你需要部署的仓库：</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/rZd1wPibx7PemGDbBG4t2OFxn8VuFvxm5fabMxMqp4uLichvhVdjpvX8m0D5A77D28ffUcYdG9B5uz1FqyNOpK8g/640?wx_fmt=png" alt="" width="350"></p>
+<p>设置部署选项，包括三点：</p>
+<ol class="list-paddingleft-2">
+<li>
+<p>部署分支（对应下图中 Branch to deploy）:</p>
+<p>顾名思义就是你的git仓库的分支，默认选择为master分支</p>
+</li>
+<li>
+<p>打包命令（对应下图中 Build command）：</p>
+<p>就是你的打包命令，诸如 npm run build，gulp build 之类；如果本身已是静态文件，不需打包编译，这一栏则不填</p>
+</li>
+<li>
+<p>打包后目录（对应下图中 Publish directory）：</p>
+<p>即执行完打包命令之后静态文件所在目录，诸如 dist，_site 之类；如果本身已是静态文件，这一栏则不填</p>
+</li>
+</ol>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/rZd1wPibx7PemGDbBG4t2OFxn8VuFvxm5MoMoWM6l8r95W2Q0FSfCDZMibSJJVmmJsDP3bQmgjMoAJRxY1sdrBlQ/640?wx_fmt=png" alt="" width="350"></p>
+<p>完成之后点击途中 deploy site 按钮</p>
+<p>&nbsp;</p>
+<p><strong>三、设置域名，绑定域名</strong></p>
+<p>进行完第二步，我们可以看到自动化部署已经开始运行了，而且过不多久，我们的网站就已经可以利用netlify域名就行访问了，如下图：</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/rZd1wPibx7PemGDbBG4t2OFxn8VuFvxm5SiaWJbSTJqA801PqhvQzKhWh79eGqy4wug1OjLmNK3M7BYpMD2MeSyA/640?wx_fmt=png" alt="" width="350"></p>
+<p>可以看到netlify为我们随机生成了一个netlify下的域名，这里我们可以更改其前缀，并绑定到我们自己的域名下：</p>
+<p>&gt;&gt; 更改netlify域名前缀：</p>
+<p>首先，点击上图中 Site settings 按钮，然后在下方点击 Change site name 按钮，然后在弹出框中输入自己需要更改的前缀名，点击保存即可，如下图所示：</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/rZd1wPibx7PemGDbBG4t2OFxn8VuFvxm53OBuIYyK11ibyE6c5eBXK9rCtgdkytMPz6UQic9MzQQslSJYY083w2uw/640?wx_fmt=png" alt="" width="350"></p>
+<p>&gt;&gt; 绑定到自己的域名下：</p>
+<p>首先，点击上上图中 Domain settings 按钮，然后在下方点击 Add custom domain 按钮，然后在弹出框中输入自己需要绑定的完整域名，点击保存，如下图所示：</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/rZd1wPibx7PemGDbBG4t2OFxn8VuFvxm5tL9CRwYyOH5DDk2iaaNkbgSCsC6b0JibEpB0TYx0qB9TBoyDQYDGTlOg/640?wx_fmt=png" alt="" width="350"></p>
+<p>这个时候会显示 ！Check DNS configuration，因为我们还没有设置域名解析到netlify服务器，所以这个时候需要到你自己域名的相应服务商网站登录之后在需要绑定的域名下添加一条CNAME解析，解析的主机记录即对应的netlify域名值（这里即 codernie.netlify.com）</p>
+<p>ok，过一会儿就可以使用自己的域名访问自己的网站啦</p>
+<p>&nbsp;</p>
+<p><strong>四、生成HTTPS证书，实现HTTPS访问</strong></p>
+<p>第四部中的Domain settings 中往下拉，可以看到 HTTPS 几个大字母：</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/rZd1wPibx7PemGDbBG4t2OFxn8VuFvxm5c1iaGicpxZAlqyxFqoGxK36iaUM2aiavZHFo2jur16lj0ShqVBGlReCUibg/640?wx_fmt=png" alt="" width="350"></p>
+<p>点击 Verify DNS configuration 按钮，待它变成下方绿色按钮之后，再点击：</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/rZd1wPibx7PemGDbBG4t2OFxn8VuFvxm5d8ynozib1aVfDZVWWtZhbIIPCAwMrdLdeg04RHtjOaLjWevVaNicnjSg/640?wx_fmt=png" alt="" width="350"></p>
+<p>然后在弹出框中点击确认，过一会儿之后就可以使用https访问你的小站啦：</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/rZd1wPibx7PemGDbBG4t2OFxn8VuFvxm5upwiakwa0v7BdND2N2WMN56pQlEcLrMrmFmxAvVFv6pTnkpnYRpVSQQ/640?wx_fmt=png" alt="" width="350"></p>
+<p>看到自己的小站前面可以有绿色的安全字样，是不是很酷炫，而且很放心，再也不用担心运营商在自己的网站上挂广告啦，哈哈哈。。。等等，是不是还差了点什么：</p>
+<p>对啊，还没有强制跳转https，OK，继续</p>
+<p>&nbsp;</p>
+<p><strong>五、强制HTTP跳转HTTPS访问</strong></p>
+<p>在第四步 Domain settings 再往下翻一点，可以看到 Force HTTPS，只需点击&nbsp;Force HTTPS 即可实现，是不是很方便，如下图：</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/rZd1wPibx7PemGDbBG4t2OFxn8VuFvxm5baJlA9RpASX7MqZKSFd3Wnxps63Ip1HKYMibNWQKXRZziaPugDNxmeKA/640?wx_fmt=png" alt="" width="350"></p>
+<p>到这里，你的网站即使用户使用http访问，也将强制跳转至https访问啦，这下可以彻底不用担下运营商给你的用户“发红包”啦！</p>
+<p>&nbsp;</p>
+<p><strong>六、设置redirect<br></strong></p>
+<p>利用netlify实现自动化部署和HTTPS就写到这里了，喜欢就点个赞啦。</p>
+
+</div>
+<div id="author_profile">
+    <div id="author_profile_info" class="author_profile_info">
+            <a href="http://home.cnblogs.com/u/codernie/" target="_blank"><img src="//pic.cnblogs.com/face/1379085/20180528125842.png" class="author_avatar" alt=""></a>
+
+
+</div>
+
+
+<pre><code>    &lt;/div&gt;</code></pre>
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://SharingMan.github.io/post/xiao-mi-yun-dong-app-chan-pin-ti-yan-bao-gao">
+                  <h3 class="post-title">
+                    小米运动app产品体验报告
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+  
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '077dfb7156577dd3cc32',
+        clientSecret: '78906b0b9327799977ddac38548e452eedc230dc',
+        repo: 'SharingMan.github.io',
+        owner: 'SharingMan',
+        admin: ['SharingMan'],
+        id: location.pathname,      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>
