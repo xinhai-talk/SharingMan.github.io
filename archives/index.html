@@ -1,192 +1,217 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="description" content="" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Xinhai Home</title>
+    <meta charset="utf-8" >
+
+<title>文章归档 | Xinhai Home</title>
+<meta name="description" content="求知若饥 虚心若愚">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
 <link rel="shortcut icon" href="https://SharingMan.github.io/favicon.ico">
 <link rel="stylesheet" href="https://SharingMan.github.io/styles/main.css">
 
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://SharingMan.github.io">
-  <img class="avatar" src="https://SharingMan.github.io/images/avatar.png" alt="" width="80px" height="80px">
-  </a>
-  <h1 class="site-title">
-    Xinhai Home
-  </h1>
-  <p class="site-description">
-    求知若饥 虚心若愚
-  </p>
-  <div class="menu-container">
-    
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://SharingMan.github.io">
+        <img src="https://SharingMan.github.io/images/avatar.png" class="site-logo">
+        <h1 class="site-title">Xinhai Home</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
       
-        <a href="/" class="menu">
-          首页
-        </a>
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
       
-    
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
       
-        <a href="/archives" class="menu">
-          归档
-        </a>
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
       
-    
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
       
-        <a href="/tags" class="menu">
-          标签
-        </a>
-      
-    
-      
-        <a href="/post/about" class="menu">
-          关于
-        </a>
-      
-    
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="site-description">
+      求知若饥 虚心若愚
+    </div>
+    <div class="site-footer">
+      Powered by Hve Notes
+    </div>
   </div>
 </div>
 
-    
-        
 
-<div class="archives-container">
-  
-    <h2 class="year">2019</h2>
-    
-      
-        <article class="post">
-          <a href="https://SharingMan.github.io/post/jiao-ni-yong-netlify-jia-su-ni-de-github-pages-wang-ye-fang-wen-su-du">
-            <h2 class="post-title">
-              教你用Netlify加速你的Github pages 网页访问速度
-              <small>2019-03-07</small>
-            </h2>
-          </a>
-        </article>
-      
-    
-      
-        <article class="post">
-          <a href="https://SharingMan.github.io/post/xiao-mi-yun-dong-app-chan-pin-ti-yan-bao-gao">
-            <h2 class="post-title">
-              小米运动app产品体验报告
-              <small>2019-03-06</small>
-            </h2>
-          </a>
-        </article>
-      
-    
-      
-        <article class="post">
-          <a href="https://SharingMan.github.io/post/xiao-mi-quan-fang-wei-shen-du-jie-xi">
-            <h2 class="post-title">
-              小米全方位深度解析
-              <small>2019-03-06</small>
-            </h2>
-          </a>
-        </article>
-      
-    
-      
-        <article class="post">
-          <a href="https://SharingMan.github.io/post/ru-he-shi-yong-markdown-xie-zuo">
-            <h2 class="post-title">
-              如何使用Markdown写作？
-              <small>2019-03-04</small>
-            </h2>
-          </a>
-        </article>
-      
-    
-      
-        <article class="post">
-          <a href="https://SharingMan.github.io/post/ru-he-shi-yong-typora">
-            <h2 class="post-title">
-              如何使用typora？
-              <small>2019-03-04</small>
-            </h2>
-          </a>
-        </article>
-      
-    
-      
-        <article class="post">
-          <a href="https://SharingMan.github.io/post/ru-he-shi-yong-sublime-text3">
-            <h2 class="post-title">
-              如何使用sublime text3？
-              <small>2019-03-04</small>
-            </h2>
-          </a>
-        </article>
-      
-    
-      
-        <article class="post">
-          <a href="https://SharingMan.github.io/post/hello-my-new-blog">
-            <h2 class="post-title">
-              Hello My New Blog
-              <small>2019-03-04</small>
-            </h2>
-          </a>
-        </article>
-      
-    
-      
-    
-  
-    <h2 class="year">2018</h2>
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-        <article class="post">
-          <a href="https://SharingMan.github.io/post/hello-hve-notes">
-            <h2 class="post-title">
-              Hello Hve Notes
-              <small>2018-12-12</small>
-            </h2>
-          </a>
-        </article>
-      
-    
-  
-</div>
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          
 
-    
-        <div class="pagination-container">
+          <h2 class="archives-title">文章归档</h2>
+          <div class="archives-container">
+            
+              <h2 class="year" data-aos="fade-in" data-aos-delay="500">2019</h2>
+              
+                
+                  <article class="post">
+                    <a href="https://SharingMan.github.io/post/jiao-ni-yong-netlify-jia-su-ni-de-github-pages-wang-ye-fang-wen-su-du">
+                      <h2 class="post-title">
+                        教你用Netlify加速你的Github pages 网页访问速度
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://SharingMan.github.io/post/xiao-mi-yun-dong-app-chan-pin-ti-yan-bao-gao">
+                      <h2 class="post-title">
+                        小米运动app产品体验报告
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://SharingMan.github.io/post/xiao-mi-quan-fang-wei-shen-du-jie-xi">
+                      <h2 class="post-title">
+                        小米全方位深度解析
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://SharingMan.github.io/post/ru-he-shi-yong-markdown-xie-zuo">
+                      <h2 class="post-title">
+                        如何使用Markdown写作？
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://SharingMan.github.io/post/ru-he-shi-yong-typora">
+                      <h2 class="post-title">
+                        如何使用typora？
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://SharingMan.github.io/post/ru-he-shi-yong-sublime-text3">
+                      <h2 class="post-title">
+                        如何使用sublime text3？
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+                  <article class="post">
+                    <a href="https://SharingMan.github.io/post/hello-my-new-blog">
+                      <h2 class="post-title">
+                        Hello My New Blog
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+              
+            
+              <h2 class="year" data-aos="fade-in" data-aos-delay="500">2018</h2>
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+                  <article class="post">
+                    <a href="https://SharingMan.github.io/post/hello-hve-notes">
+                      <h2 class="post-title">
+                        Hello Hve Notes
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+            
+          </div>
+
+          <div class="pagination-container">
   
   
 </div>
 
-    
-        <div class="site-footer">
-  Powered by Hve Notes
-</div>
-
-<script>
-  hljs.initHighlightingOnLoad()
-</script>
-
+        </div>
       </div>
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
   </body>
 </html>
