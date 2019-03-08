@@ -1,93 +1,71 @@
-<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" >
-
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>教你用Netlify加速你的Github pages 网页访问速度 | Xinhai Home</title>
-<meta name="description" content="求知若饥 虚心若愚">
+<link rel="shortcut icon" href="https://SharingMan.github.io/favicon.ico">
+<link rel="stylesheet" href="https://SharingMan.github.io/styles/main.css">
 
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
-<link rel="shortcut icon" href="C:/Users/Xinhai/Documents/hve-notes/output/favicon.ico">
-<link rel="stylesheet" href="C:/Users/Xinhai/Documents/hve-notes/output/styles/main.css">
-
-
-  
-    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
-  
-
-  
-
-
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
 
 
   </head>
   <body>
-    <div id="app" class="main">
-
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="C:/Users/Xinhai/Documents/hve-notes/output">
-        <img src="C:/Users/Xinhai/Documents/hve-notes/output/images/avatar.png" class="site-logo">
-        <h1 class="site-title">Xinhai Home</h1>
-      </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
-    </div>
-    <div>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://SharingMan.github.io">
+  <img class="avatar" src="https://SharingMan.github.io/images/avatar.png" alt="" width="80px" height="80px">
+  </a>
+  <h1 class="site-title">
+    Xinhai Home
+  </h1>
+  <p class="site-description">
+    求知若饥 虚心若愚
+  </p>
+  <div class="menu-container">
+    
       
-        
-          <a href="/" class="site-nav">
-            首页
-          </a>
-        
+        <a href="/" class="menu">
+          首页
+        </a>
       
-        
-          <a href="/archives" class="site-nav">
-            归档
-          </a>
-        
+    
       
-        
-          <a href="/tags" class="site-nav">
-            标签
-          </a>
-        
+        <a href="/archives" class="menu">
+          归档
+        </a>
       
-        
-          <a href="/post/about" class="site-nav">
-            关于
-          </a>
-        
+    
       
-    </div>
-  </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="site-description">
-      求知若饥 虚心若愚
-    </div>
-    <div class="site-footer">
-      Powered by Hve Notes
-    </div>
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
   </div>
 </div>
 
-
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          <div class="post-detail">
-            <h2 class="post-title">教你用Netlify加速你的Github pages 网页访问速度</h2>
-            <div class="post-date">2019-03-07</div>
-            
-              <div class="feature-container" style="background-image: url('file:///C:/Users/Xinhai/Documents/hve-notes/output/post-images/jiao-ni-yong-netlify-jia-su-ni-de-github-pages-wang-ye-fang-wen-su-du.gif')">
-              </div>
-            
+      
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              教你用Netlify加速你的Github pages 网页访问速度
+            </h2>
+            <div class="post-info">
+              <time class="post-time">
+                · 2019-03-07 ·
+              </time>
+              
+            </div>
             <div class="post-content">
               <div class="postBody">
             <div id="cnblogs_post_body" class="blogpost-body"><p>最近在github pages 上部署了自己的个人网站，看到自己的网页用Hve发布出来，欣喜若狂，但与之而来的问题就是，页面加载太慢，为了解决这个问题，在Hve社群中，我们有爱的群主给出了他的解决方案——用Netlify。^_^
@@ -174,74 +152,57 @@
 
 <pre><code>    &lt;/div&gt;</code></pre>
             </div>
-            
-            
-              <div class="next-post">
-                <div class="next">下一篇</div>
-                <a href="C:/Users/Xinhai/Documents/hve-notes/output/post/xiao-mi-yun-dong-app-chan-pin-ti-yan-bao-gao/index.html">
-                  <h3 class="post-title">
-                    小米运动app产品体验报告
-                  </h3>
-                </a>
-              </div>
-            
-
-            
-              
-                <div id="gitalk-container" data-aos="fade-in"></div>
-              
-
-              
-            
-
-          </div>
-
+          </article>
         </div>
-      </div>
-    </div>
+    
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://SharingMan.github.io/post/xiao-mi-yun-dong-app-chan-pin-ti-yan-bao-gao">
+              <h3 class="post-title">
+                小米运动app产品体验报告
+              </h3>
+            </a>
+          </div>  
+        
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 
-<script type="application/javascript">
+<div id="gitalk-container"></div>
 
-AOS.init();
+<script>
 
-hljs.initHighlightingOnLoad()
+  var gitalk = new Gitalk({
+    clientID: '077dfb7156577dd3cc32',
+    clientSecret: '78906b0b9327799977ddac38548e452eedc230dc',
+    repo: 'SharingMan.github.io',
+    owner: 'SharingMan',
+    admin: ['SharingMan'],
+    id: location.pathname,      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
 
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
+  gitalk.render('gitalk-container')
 
 </script>
 
+          
 
-  
-  
-    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-    <script>
+          
+        
+    
+        <div class="site-footer">
+  Powered by Hve Notes
+</div>
 
-      var gitalk = new Gitalk({
-        clientID: '077dfb7156577dd3cc32',
-        clientSecret: '78906b0b9327799977ddac38548e452eedc230dc',
-        repo: 'SharingMan.github.io',
-        owner: 'SharingMan',
-        admin: ['SharingMan'],
-        id: location.pathname,      // Ensure uniqueness and length less than 50
-        distractionFreeMode: false  // Facebook-like distraction free mode
-      })
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
 
-      gitalk.render('gitalk-container')
-
-    </script>
-  
-
-  
-
-
-
-
+      </div>
+    </div>
   </body>
 </html>
