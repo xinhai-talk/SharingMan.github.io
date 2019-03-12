@@ -1,0 +1,144 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Python面向对象 | Xinhai Home</title>
+<link rel="shortcut icon" href="C:/Users/Xinhai/Documents/hve-notes/output/favicon.ico">
+<link rel="stylesheet" href="C:/Users/Xinhai/Documents/hve-notes/output/styles/main.css">
+
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+
+
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="C:/Users/Xinhai/Documents/hve-notes/output">
+  <img class="avatar" src="C:/Users/Xinhai/Documents/hve-notes/output/images/avatar.png" alt="" width="80px" height="80px">
+  </a>
+  <h1 class="site-title">
+    Xinhai Home
+  </h1>
+  <p class="site-description">
+    求知若饥 虚心若愚
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+      
+        <a href="https://github.com/SharingMan" class="menu">
+          Github
+        </a>
+      
+    
+  </div>
+</div>
+
+      
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              Python面向对象
+            </h2>
+            <div class="post-info">
+              <time class="post-time">
+                · 2019-03-08 ·
+              </time>
+              
+            </div>
+            <div class="post-content">
+              <!DOCTYPE html>
+<html>
+<head>
+<title>Python面向对象</title>
+<meta charset="utf-8"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="renderer" content="webkit"/>
+<meta name="author" content="mubu.com"/>
+</head>
+<body style="margin: 50px 20px;color: #333;font-family: 'Helvetica Neue','Hiragino Sans GB','WenQuanYi Micro Hei','Microsoft Yahei',sans-serif;">
+<div class="export-wrapper"><div style="font-size: 24px; padding: 20px 15px 0;"><div style="padding-bottom: 10px">Python面向对象</div><div style="background: #e5e6e8; height: 1px; margin-bottom: 20px;"></div></div><ul style="list-style: disc outside;"><li class="collapsed" style="line-height: 22px;"><span class="content mubu-node collapsed" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;"><span class="bold" style="font-weight: bold;">1.opp</span></span><ul class="children" style="list-style: disc outside; padding-bottom: 4px;"><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">在完成某一个需求前，首先确定&nbsp;职责&nbsp;——&nbsp;要做的事情（方法）</span></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">根据&nbsp;职责&nbsp;确定不同的&nbsp;对象，在&nbsp;对象&nbsp;内部封装不同的&nbsp;方法（多个）</span></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">最后完成的代码，就是顺序地让&nbsp;不同的对象&nbsp;调用&nbsp;不同的方法</span></li></ul></li><li class="collapsed" style="line-height: 22px;"><span class="content mubu-node collapsed" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;"><span class="bold" style="font-weight: bold;">2.类</span></span><ul class="children" style="list-style: disc outside; padding-bottom: 4px;"><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">就相当于制造飞机时的图纸，是一个&nbsp;模板，是负责创建对象的</span></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">类&nbsp;是对一群具有&nbsp;相同 特征&nbsp;或者&nbsp;行为&nbsp;的事物的一个统称，是抽象的，不能直接使用</span></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">特征&nbsp;被称为&nbsp;属性</span></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">行为&nbsp;被称为&nbsp;方法</span></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">它也是一种分类方式，比如说一类事物——鸟</span></li><li style="line-height: 22px;"><span class="content mubu-node" images="%5B%7B%22id%22%3A%2220f1695aa43d53005-44461%22%2C%22uri%22%3A%22document_image%2Fb78cba62-290b-4943-8cb6-dda472309222-44461.jpg%22%2C%22ow%22%3A2700%2C%22oh%22%3A1911%2C%22w%22%3A599%7D%5D" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;"></span><div style="padding: 3px 0"><img src="https://img.mubu.com/document_image/b78cba62-290b-4943-8cb6-dda472309222-44461.jpg" style="max-width: 720px; width: 599px;" class="attach-img"></div></li></ul></li><li class="collapsed" style="line-height: 22px;"><span class="content mubu-node collapsed" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;"><span class="bold" style="font-weight: bold;">3.对象</span></span><ul class="children" style="list-style: disc outside; padding-bottom: 4px;"><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">对象是由类创建出来的一个具体存在，由&nbsp;哪一个类&nbsp;创建出来的&nbsp;对象，就拥有在&nbsp;哪一个类&nbsp;中定义的：</span></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">属性</span></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">方法</span></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">对象&nbsp;就相当于用&nbsp;图纸&nbsp;制造&nbsp;的飞机</span></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">在程序开发中，应该&nbsp;先有类，再有对象</span></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;"></span></li></ul></li><li class="collapsed" style="line-height: 22px;"><span class="content mubu-node collapsed" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;"><span class="bold" style="font-weight: bold;">4.__方法名__&nbsp;</span></span><ul class="children" style="list-style: disc outside; padding-bottom: 4px;"><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">是&nbsp;Python&nbsp;提供的&nbsp;内置方法 / 属性</span></li><li style="line-height: 22px;"><span class="content mubu-node" images="%5B%7B%22id%22%3A%221291695ab7591011e-44461%22%2C%22uri%22%3A%22document_image%2Fc7bfba6d-3c64-40d7-8c1e-d9d862da87a2-44461.jpg%22%2C%22ow%22%3A557%2C%22oh%22%3A185%7D%5D" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;"></span><div style="padding: 3px 0"><img src="https://img.mubu.com/document_image/c7bfba6d-3c64-40d7-8c1e-d9d862da87a2-44461.jpg" style="max-width: 720px;" class="attach-img"></div></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;"><span class="bold" style="font-weight: bold;">__init__</span></span><ul class="children" style="list-style: disc outside; padding-bottom: 4px;"><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">改造初始化方法，可以让创建对象更加灵活</span></li></ul></li><li class="collapsed" style="line-height: 22px;"><span class="content mubu-node collapsed" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;"><span class="bold" style="font-weight: bold;">__del__&nbsp;</span></span><ul class="children" style="list-style: disc outside; padding-bottom: 4px;"><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">如果希望在对象被销毁前，再做一些事情，可以考虑一下&nbsp;__del__&nbsp;方法</span></li></ul></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;"><span class="bold" style="font-weight: bold;">__str__&nbsp;</span></span><ul class="children" style="list-style: disc outside; padding-bottom: 4px;"><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">希望使用&nbsp;print&nbsp;输出&nbsp;对象变量&nbsp;时，能够打印&nbsp;自定义的内容，就可以利用&nbsp;__str__&nbsp;这个内置方法了</span></li></ul></li></ul></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;"><span class="bold" style="font-weight: bold;">5.面向对象的三大特性</span></span><ul class="children" style="list-style: disc outside; padding-bottom: 4px;"><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;"><span class="bold" style="font-weight: bold;">1.封装</span></span><ul class="children" style="list-style: disc outside; padding-bottom: 4px;"><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">封装&nbsp;是面向对象编程的一大特点</span></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">面向对象编程的&nbsp;第一步&nbsp;—— 将&nbsp;属性&nbsp;和&nbsp;方法&nbsp;封装&nbsp;到一个抽象的&nbsp;类&nbsp;中</span></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">外界&nbsp;使用&nbsp;类&nbsp;创建&nbsp;对象，然后&nbsp;让对象调用方法</span></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">对象方法的细节&nbsp;都被&nbsp;封装&nbsp;在&nbsp;类的内部</span></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">例子</span><ul class="children" style="list-style: disc outside; padding-bottom: 4px;"><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">人是属于一个类，郭新海就是人定义的对象</span></li></ul></li></ul></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;"><span class="bold" style="font-weight: bold;">2.继承</span></span><ul class="children" style="list-style: disc outside; padding-bottom: 4px;"><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">实现代码的重用，相同的代码不需要重复的编写</span></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">例子</span><ul class="children" style="list-style: disc outside; padding-bottom: 4px;"><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">单继承：儿子继承父亲的基因</span></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">多继承：儿子可以继承父亲和母亲的基因</span></li></ul></li></ul></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;"><span class="bold" style="font-weight: bold;">3.多态</span></span><ul class="children" style="list-style: disc outside; padding-bottom: 4px;"><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">不同的对象调用相同的方法，产生不同的执行结果，增加代码的灵活度</span><ul class="children" style="list-style: disc outside; padding-bottom: 4px;"><li style="line-height: 22px;"><span class="content mubu-node" images="%5B%7B%22id%22%3A%2211c1695c3b8036104-44461%22%2C%22uri%22%3A%22document_image%2F619267e7-39c8-42a3-a69e-74a58a611414-44461.jpg%22%2C%22ow%22%3A310%2C%22oh%22%3A166%7D%5D" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;"></span><div style="padding: 3px 0"><img src="https://img.mubu.com/document_image/619267e7-39c8-42a3-a69e-74a58a611414-44461.jpg" style="max-width: 720px;" class="attach-img"></div></li></ul></li></ul></li></ul></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;"><span class="bold" style="font-weight: bold;">6.私有属性</span></span><ul class="children" style="list-style: disc outside; padding-bottom: 4px;"><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">对象&nbsp;不希望公开的&nbsp;属性</span></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">私有属性、方法&nbsp;是对象的隐私，不对外公开，外界&nbsp;以及&nbsp;子类&nbsp;都不能直接访问</span></li></ul></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;"><span class="bold" style="font-weight: bold;">7.私有方法</span></span><ul class="children" style="list-style: disc outside; padding-bottom: 4px;"><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">对象&nbsp;不希望公开的&nbsp;方法</span></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">私有属性、方法&nbsp;是对象的隐私，不对外公开，外界&nbsp;以及&nbsp;子类&nbsp;都不能直接访问</span></li></ul></li><li class="collapsed" style="line-height: 22px;"><span class="content mubu-node collapsed" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;"><span class="bold" style="font-weight: bold;">8.方法的重写</span></span><ul class="children" style="list-style: disc outside; padding-bottom: 4px;"><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">子类的方法不能满足需求</span></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">子类可以写与父类相同的方法</span></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">如果要输出父类的方法（super.method())</span></li></ul></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;"><span class="bold" style="font-weight: bold;">9.实例</span></span><ul class="children" style="list-style: disc outside; padding-bottom: 4px;"><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">使用面相对象开发，第 1 步&nbsp;是设计&nbsp;类</span></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">使用&nbsp;类名()&nbsp;创建对象，创建对象&nbsp;的动作有两步：</span><ul class="children" style="list-style: disc outside; padding-bottom: 4px;"><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">1) 在内存中为对象&nbsp;分配空间</span></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">2) 调用初始化方法&nbsp;__init__&nbsp;为&nbsp;对象初始化</span></li></ul></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">对象创建后，内存&nbsp;中就有了一个对象的&nbsp;实实在在&nbsp;的存在 ——&nbsp;实例</span></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">创建对象的&nbsp;动作&nbsp;叫做&nbsp;实例化</span></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">对象的属性&nbsp;叫做&nbsp;实例属性</span></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">对象调用的方法&nbsp;叫做&nbsp;实例方法</span></li></ul></li></ul></div>
+
+</body>
+</html>
+            </div>
+          </article>
+        </div>
+    
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="C:/Users/Xinhai/Documents/hve-notes/output/post/jiao-ni-yong-netlify-jia-su-ni-de-github-pages-wang-ye-fang-wen-su-du/index.html">
+              <h3 class="post-title">
+                教你用Netlify加速你的Github pages 网页访问速度
+              </h3>
+            </a>
+          </div>  
+        
+
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: '077dfb7156577dd3cc32',
+    clientSecret: '78906b0b9327799977ddac38548e452eedc230dc',
+    repo: 'SharingMan.github.io',
+    owner: 'SharingMan',
+    admin: ['SharingMan'],
+    id: location.pathname,      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
+    
+        <div class="site-footer">
+  Powered by Hve Notes
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+      </div>
+    </div>
+  </body>
+</html>
