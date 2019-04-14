@@ -1,87 +1,116 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="description" content="" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" >
+
 <title>新海与猎豹的故事-序幕 | Xinhai Home</title>
+<meta name="description" content="求知若饥 虚心若愚">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
 <link rel="shortcut icon" href="https://SharingMan.github.io/favicon.ico">
 <link rel="stylesheet" href="https://SharingMan.github.io/styles/main.css">
 
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://SharingMan.github.io">
-  <img class="avatar" src="https://SharingMan.github.io/images/avatar.png" alt="" width="80px" height="80px">
-  </a>
-  <h1 class="site-title">
-    Xinhai Home
-  </h1>
-  <p class="site-description">
-    求知若饥 虚心若愚
-  </p>
-  <div class="menu-container">
-    
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://SharingMan.github.io">
+        <img src="https://SharingMan.github.io/images/avatar.png" class="site-logo">
+        <h1 class="site-title">Xinhai Home</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
       
-        <a href="/" class="menu">
-          首页
-        </a>
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
       
-    
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
       
-        <a href="/archives" class="menu">
-          归档
-        </a>
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
       
-    
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
       
-        <a href="/tags" class="menu">
-          标签
-        </a>
+        
+          <a href="https://github.com/SharingMan" class="site-nav">
+            Github
+          </a>
+        
       
-    
-      
-        <a href="/post/about" class="menu">
-          关于
-        </a>
-      
-    
-      
-        <a href="https://github.com/SharingMan" class="menu">
-          Github
-        </a>
-      
-    
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="site-description">
+      求知若饥 虚心若愚
+    </div>
+    <div class="site-footer">
+      Powered by Hve Notes
+    </div>
   </div>
 </div>
 
-      
-        <div class="post-detail">
-          <article class="post">
-            <h2 class="post-title">
-              新海与猎豹的故事-序幕
-            </h2>
-            <div class="post-info">
-              <time class="post-time">
-                · 2019-04-14 ·
-              </time>
-              
-            </div>
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">新海与猎豹的故事-序幕</h2>
+            <div class="post-date">2019-04-14</div>
+            
+              <div class="feature-container" style="background-image: url('https://SharingMan.github.io/post-images/xin-hai-yu-xi-bao-de-gu-shi-xu-mu.jpg')">
+              </div>
+            
             <div class="post-content">
               <p><img src="https://upload-images.jianshu.io/upload_images/1419060-2e0d7c375a62fbe9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Slogan"></p>
-<h1 id="写在前面">写在前面</h1><p>今天我看了猎豹公司的<a href="https://www.bilibili.com/video/av28708509?from=search&amp;seid=7111207298252610214">《机器人之夜》</a>,了解到了付盛老师的创业史，猎豹的成长史，以及诸多有趣好玩的AI产品。<br><img src="https://upload-images.jianshu.io/upload_images/1419060-318ca2c478f7a2da.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="傅盛"></p>
-<p>从傅盛老师的演讲中能够感受出，今天公司不论是在产品领域还是在AI人工智能领域，所取得的优异成绩，都实属不易。<br><img src="https://upload-images.jianshu.io/upload_images/1419060-0a1d38b12df5b9ec.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<h1 id="写在前面">写在前面</h1>
+<p>今天我看了猎豹公司的<a href="https://www.bilibili.com/video/av28708509?from=search&amp;seid=7111207298252610214">《机器人之夜》</a>,了解到了付盛老师的创业史，猎豹的成长史，以及诸多有趣好玩的AI产品。
+<img src="https://upload-images.jianshu.io/upload_images/1419060-318ca2c478f7a2da.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="傅盛"></p>
+<p>从傅盛老师的演讲中能够感受出，今天公司不论是在产品领域还是在AI人工智能领域，所取得的优异成绩，都实属不易。
+<img src="https://upload-images.jianshu.io/upload_images/1419060-0a1d38b12df5b9ec.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
 <p>如果把互联网比作这个时代的海上浪潮，那互联网公司就如同海上向前的航舰，我们这艘舰队的名字叫——猎豹移动，我们的舰长是傅盛，能加入这支舰队，成为其中一员，我感到很是荣幸，因为我们能在傅盛舰长的带领下走向下一个星辰大海。</p>
-<p>傅盛老师是我心目中的榜样，从他的经历中，也看到了当代中国互联网的缩影。<br>他身上的品质——<strong>既能仰望星空，又能脚踏实地。</strong></p>
-<p>但自己目前的能力和水平还和公司要求的能力有所差距，所以这段时间就想着应该如何让自己变得强大起来。<br><img src="https://upload-images.jianshu.io/upload_images/1419060-18a13e0eb14c888b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>傅盛老师是我心目中的榜样，从他的经历中，也看到了当代中国互联网的缩影。
+他身上的品质——<strong>既能仰望星空，又能脚踏实地。</strong></p>
+<p>但自己目前的能力和水平还和公司要求的能力有所差距，所以这段时间就想着应该如何让自己变得强大起来。
+<img src="https://upload-images.jianshu.io/upload_images/1419060-18a13e0eb14c888b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
 <p>这样，我就能和优秀的人一起做出优秀的事，做用户喜欢的产品，展现我的价值。</p>
-<h1 id="职责介绍">职责介绍</h1><p><strong>我的岗位：</strong>产品经理</p>
-<p><strong>工作职责：</strong><br>从事猎豹游戏旗下游戏产品运营/策划/用户管理等工作，为全球用户提供优秀的游戏体验和服务，追求用户价值和公司效益的双赢。</p>
+<h1 id="职责介绍">职责介绍</h1>
+<p>**我的岗位：**产品经理</p>
+<p><strong>工作职责：</strong>
+从事猎豹游戏旗下游戏产品运营/策划/用户管理等工作，为全球用户提供优秀的游戏体验和服务，追求用户价值和公司效益的双赢。</p>
 <p><strong>任职要求：</strong></p>
 <ul>
 <li>本科学历，有英语等外语特长者加分。</li>
@@ -90,84 +119,119 @@
 <li>有良好的抗压能力，积极主动</li>
 </ul>
 <p>通过了猎豹的面试，说明我的能力基本满足要求，但达到卓越还有一定距离，于是，如何提升它们，这也就是是我最近需要努力的方向：</p>
-<h3 id="洞察：">洞察：</h3><ul>
+<h3 id="洞察">洞察：</h3>
+<ul>
 <li>了解计算机，互联网的发展史</li>
 <li>了解猎豹的成长发展史</li>
-<li>了解整个游戏行业现状<h3 id="思维：">思维：</h3></li>
+<li>了解整个游戏行业现状</li>
+</ul>
+<h3 id="思维">思维：</h3>
+<ul>
 <li>培养自己的用户体验，产品经理思维</li>
 <li>培养自己逻辑思维</li>
-<li>培养自己数据分析处理思维<h3 id="能力：">能力：</h3></li>
+<li>培养自己数据分析处理思维</li>
+</ul>
+<h3 id="能力">能力：</h3>
+<ul>
 <li>学好英文，达到基本的英文沟通，阅读无障碍</li>
 <li>提升自己获取数据，分析数据，可视化数据的能力</li>
 <li>通过学习优秀产品的设计经验，自己去独立做一款满足自己需求的产品或游戏</li>
 </ul>
 <p>自己想要的愿景列出来了，接下来就是需要我脚踏实地去实践，如何将自己想要的实现，就是这段时间自己最应该做的事情。</p>
-<p>现如今我需要设计自己的游戏成长路线，通过<strong>“升级打怪”</strong>，一步步达成我的游戏目标，解锁这些技能。</p>
+<p>现如今我需要设计自己的游戏成长路线，通过**“升级打怪”**，一步步达成我的游戏目标，解锁这些技能。</p>
 <p>今天就给这个游戏起了一个名字《新海与猎豹的故事》。</p>
-<h1 id="游戏初始化">游戏初始化</h1><p><img src="https://upload-images.jianshu.io/upload_images/1419060-40464e3e893a117a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="游戏初始化"></p>
-<p><strong>游戏角色：</strong>新海（大四学生）<br><strong>初始等级：</strong>小白<br><strong>武器：</strong>一台笔记本，一沓A4纸，一支笔，<br><strong>初始技能:</strong>时间管理术，1级搜索术，1级学习术，1级写作术<br><strong>资源：</strong>一座图书馆，一张互联网</p>
-<h1 id="下一个游戏阶段">下一个游戏阶段</h1><p><img src="https://upload-images.jianshu.io/upload_images/1419060-687054dff071e6b6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="任务地图"></p>
-<p><strong>游戏目标：</strong>找到如何实现这些目标的任务地图（具体路线）。<br><strong>可用资源：</strong>互联网<br><strong>任务完成时间：</strong>2天内（敬请期待……）</p>
-<h1 id="写在最后">写在最后</h1><p>后面我将以《新海与猎豹的故事》开启我新的写作专栏，记录我每一点的蜕变。</p>
+<h1 id="游戏初始化">游戏初始化</h1>
+<p><img src="https://upload-images.jianshu.io/upload_images/1419060-40464e3e893a117a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="游戏初始化"></p>
+<p>**游戏角色：**新海（大四学生）
+**初始等级：**小白
+**武器：**一台笔记本，一沓A4纸，一支笔，
+**初始技能:**时间管理术，1级搜索术，1级学习术，1级写作术
+**资源：**一座图书馆，一张互联网</p>
+<h1 id="下一个游戏阶段">下一个游戏阶段</h1>
+<p><img src="https://upload-images.jianshu.io/upload_images/1419060-687054dff071e6b6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="任务地图"></p>
+<p>**游戏目标：**找到如何实现这些目标的任务地图（具体路线）。
+**可用资源：**互联网
+**任务完成时间：**2天内（敬请期待……）</p>
+<h1 id="写在最后">写在最后</h1>
+<p>后面我将以《新海与猎豹的故事》开启我新的写作专栏，记录我每一点的蜕变。</p>
 <pre><code>作者：新海
 对这个世界充满好奇
 对互联网世界充满兴趣
 对自己内心世界一直探索
 爱阅读，爱实践，爱跑步，爱游戏，爱分享
 希望遇见志同道合的朋友
-2019年4月14日晚</code></pre>
+2019年4月14日晚
+</code></pre>
+
             </div>
-          </article>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://SharingMan.github.io/post/bai-xiong-chan-pin-ti-yan">
+                  <h3 class="post-title">
+                    白熊产品体验
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
         </div>
-    
-        
-          <div class="next-post">
-            <div class="next">下一篇</div>
-            <a href="https://SharingMan.github.io/post/bai-xiong-chan-pin-ti-yan">
-              <h3 class="post-title">
-                白熊产品体验
-              </h3>
-            </a>
-          </div>  
-        
-
-        
-          
-            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-
-<div id="gitalk-container"></div>
-
-<script>
-
-  var gitalk = new Gitalk({
-    clientID: '077dfb7156577dd3cc32',
-    clientSecret: '78906b0b9327799977ddac38548e452eedc230dc',
-    repo: 'SharingMan.github.io',
-    owner: 'SharingMan',
-    admin: ['SharingMan'],
-    id: location.pathname,      // Ensure uniqueness and length less than 50
-    distractionFreeMode: false  // Facebook-like distraction free mode
-  })
-
-  gitalk.render('gitalk-container')
-
-</script>
-
-          
-
-          
-        
-    
-        <div class="site-footer">
-  Powered by Hve Notes
-</div>
-
-<script>
-  hljs.initHighlightingOnLoad()
-</script>
-
       </div>
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+  
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '077dfb7156577dd3cc32',
+        clientSecret: '78906b0b9327799977ddac38548e452eedc230dc',
+        repo: 'SharingMan.github.io',
+        owner: 'SharingMan',
+        admin: ['SharingMan'],
+        id: location.pathname,      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
   </body>
 </html>

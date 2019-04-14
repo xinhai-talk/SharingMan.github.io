@@ -1,87 +1,105 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="description" content="" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" >
+
 <title>小米运动app产品体验报告 | Xinhai Home</title>
+<meta name="description" content="求知若饥 虚心若愚">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
 <link rel="shortcut icon" href="https://SharingMan.github.io/favicon.ico">
 <link rel="stylesheet" href="https://SharingMan.github.io/styles/main.css">
 
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://SharingMan.github.io">
-  <img class="avatar" src="https://SharingMan.github.io/images/avatar.png" alt="" width="80px" height="80px">
-  </a>
-  <h1 class="site-title">
-    Xinhai Home
-  </h1>
-  <p class="site-description">
-    求知若饥 虚心若愚
-  </p>
-  <div class="menu-container">
-    
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://SharingMan.github.io">
+        <img src="https://SharingMan.github.io/images/avatar.png" class="site-logo">
+        <h1 class="site-title">Xinhai Home</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
       
-        <a href="/" class="menu">
-          首页
-        </a>
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
       
-    
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
       
-        <a href="/archives" class="menu">
-          归档
-        </a>
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
       
-    
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
       
-        <a href="/tags" class="menu">
-          标签
-        </a>
+        
+          <a href="https://github.com/SharingMan" class="site-nav">
+            Github
+          </a>
+        
       
-    
-      
-        <a href="/post/about" class="menu">
-          关于
-        </a>
-      
-    
-      
-        <a href="https://github.com/SharingMan" class="menu">
-          Github
-        </a>
-      
-    
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="site-description">
+      求知若饥 虚心若愚
+    </div>
+    <div class="site-footer">
+      Powered by Hve Notes
+    </div>
   </div>
 </div>
 
-      
-        <div class="post-detail">
-          <article class="post">
-            <h2 class="post-title">
-              小米运动app产品体验报告
-            </h2>
-            <div class="post-info">
-              <time class="post-time">
-                · 2019-03-06 ·
-              </time>
-              
-                <a href="https://SharingMan.github.io/tag/DtJgmX9oo" class="post-tags">
-                  # 产品
-                </a>
-              
-            </div>
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">小米运动app产品体验报告</h2>
+            <div class="post-date">2019-03-06</div>
+            
+              <div class="feature-container" style="background-image: url('https://SharingMan.github.io/post-images/xiao-mi-yun-dong-app-chan-pin-ti-yan-bao-gao.png')">
+              </div>
+            
             <div class="post-content">
               <p>本文作者：郭新海，西安石油大学计算机网络工程专业学生，酷爱产品相关。</p>
-<p>## </p>
+<h2 id=""></h2>
 <p><strong>一、文档概览</strong></p>
-<p><a href="http://v.chanpin100.com/2016/05/%E5%B0%8F%E7%B1%B3%E8%BF%90%E5%8A%A8%E4%BA%A7%E5%93%81%E5%88%86%E6%9E%9014.png"><img src="http://upload-images.jianshu.io/upload_images/1419060-08b17289e5b73ddf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="小米运动产品分析"></a> </p>
-<p>## </p>
+<p><a href="http://v.chanpin100.com/2016/05/%E5%B0%8F%E7%B1%B3%E8%BF%90%E5%8A%A8%E4%BA%A7%E5%93%81%E5%88%86%E6%9E%9014.png"><img src="http://upload-images.jianshu.io/upload_images/1419060-08b17289e5b73ddf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="小米运动产品分析"></a></p>
+<h2 id="-2"></h2>
 <p><strong>二、产品概述</strong></p>
 <p><strong>1.体验环境</strong></p>
 <p>体验产品：小米运动app</p>
@@ -98,12 +116,12 @@
 <p>震动提醒：包括来电震动、闹钟震动、运动达标震动。</p>
 <p>社交：以运动、健康为切入点进行社交。</p>
 <p>人体ID</p>
-<p>## </p>
+<h2 id="-3"></h2>
 <p><strong>三、产品分析</strong></p>
 <p><strong>1.产品结构图</strong></p>
-<p><a href="http://v.chanpin100.com/2016/05/%E5%B0%8F%E7%B1%B3%E8%BF%90%E5%8A%A8%E4%BA%A7%E5%93%81%E5%88%86%E6%9E%90285.png"><img src="http://upload-images.jianshu.io/upload_images/1419060-a2426801e996d66c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="小米运动产品分析"></a> </p>
+<p><a href="http://v.chanpin100.com/2016/05/%E5%B0%8F%E7%B1%B3%E8%BF%90%E5%8A%A8%E4%BA%A7%E5%93%81%E5%88%86%E6%9E%90285.png"><img src="http://upload-images.jianshu.io/upload_images/1419060-a2426801e996d66c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="小米运动产品分析"></a></p>
 <p><strong>2.用户使用流程图</strong></p>
-<p><a href="http://v.chanpin100.com/2016/05/%E5%B0%8F%E7%B1%B3%E8%BF%90%E5%8A%A8%E4%BA%A7%E5%93%81%E5%88%86%E6%9E%90297.png"><img src="http://upload-images.jianshu.io/upload_images/1419060-4a564b090ce431e8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="小米运动产品分析"></a> </p>
+<p><a href="http://v.chanpin100.com/2016/05/%E5%B0%8F%E7%B1%B3%E8%BF%90%E5%8A%A8%E4%BA%A7%E5%93%81%E5%88%86%E6%9E%90297.png"><img src="http://upload-images.jianshu.io/upload_images/1419060-4a564b090ce431e8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="小米运动产品分析"></a></p>
 <p><strong>3.功能体验分析</strong></p>
 <p>3.1宏观分析</p>
 <p>“小米运动”通过与小米手环、小米电子秤绑定，对人体健康状况进行全面监测分析。其功能可分为以下几类：健康管理、震动提醒、身份ID，社交。</p>
@@ -115,7 +133,7 @@
 <p>社交包括第三方接入和添加亲友，分别位于“智玩”和“我的”页面中。 “亲友”功能在“我的”页面的最后部分，与设置、意见反馈一起归类为“更多”。这样设置入口过深，一般用户不会使用。建议将此功能位置提前，或者与第三方介入放置在一起，从而通过社交提高产品普及度和用户粘性。</p>
 <p>3.2具体功能分析</p>
 <p>主要功能、所需设备及满足的需求：</p>
-<p><a href="http://v.chanpin100.com/2016/05/26.jpg"><img src="http://upload-images.jianshu.io/upload_images/1419060-26705f79d1924ce9.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="2"></a> </p>
+<p><a href="http://v.chanpin100.com/2016/05/26.jpg"><img src="http://upload-images.jianshu.io/upload_images/1419060-26705f79d1924ce9.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="2"></a></p>
 <p>3.2.1健康管理</p>
 <p>（1）步数分析</p>
 <p>步数目标设置在app初始化时完成。步数分析在“状态”页面最上方，实时纪录步数增长情况，并计算出热量消耗。用扇形图展示当前运动量与目标运动量的差距。</p>
@@ -129,7 +147,7 @@
 <p>（2）睡眠分析</p>
 <p>“状态”页面录有睡眠的简要信息，包括睡眠时长、深睡时间，睡眠开始及结束时间。</p>
 <p>点击进入睡眠统计页面，有睡眠柱形图和睡眠统计信息。点击睡眠柱形图显示相应时间段的睡眠质量，图下方展示的数据包括全天睡眠时间、深睡浅睡时间、入睡醒来时间和清醒时长。</p>
-<p><a href="http://v.chanpin100.com/2016/05/%E5%B0%8F%E7%B1%B3%E8%BF%90%E5%8A%A8%E4%BA%A7%E5%93%81%E5%88%86%E6%9E%901359.png"><img src="http://upload-images.jianshu.io/upload_images/1419060-1a829cbaffcab41d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="小米运动产品分析1359"></a> </p>
+<p><a href="http://v.chanpin100.com/2016/05/%E5%B0%8F%E7%B1%B3%E8%BF%90%E5%8A%A8%E4%BA%A7%E5%93%81%E5%88%86%E6%9E%901359.png"><img src="http://upload-images.jianshu.io/upload_images/1419060-1a829cbaffcab41d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="小米运动产品分析1359"></a></p>
 <p>优点：</p>
 <p>1）睡眠图以颜色深浅区分睡眠程度，形象、直观。</p>
 <p>2）对睡眠信息详细纪录。</p>
@@ -139,14 +157,14 @@
 <p>3）没有对睡眠质量分析。</p>
 <p>4）午睡无法检测到。</p>
 <p>（3）跑步</p>
-<p><a href="http://v.chanpin100.com/2016/05/%E5%B0%8F%E7%B1%B3%E8%BF%90%E5%8A%A8%E4%BA%A7%E5%93%81%E5%88%86%E6%9E%9014731.png"><img src="http://upload-images.jianshu.io/upload_images/1419060-c22a5eab82db20f7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="小米运动产品分析1473"></a> </p>
+<p><a href="http://v.chanpin100.com/2016/05/%E5%B0%8F%E7%B1%B3%E8%BF%90%E5%8A%A8%E4%BA%A7%E5%93%81%E5%88%86%E6%9E%9014731.png"><img src="http://upload-images.jianshu.io/upload_images/1419060-c22a5eab82db20f7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="小米运动产品分析1473"></a></p>
 <p>点击主页左上角跑步图标进入跑步页面，下方有“历史记录”按钮。点击“开始”进行跑步纪录，进入普通模式，纪录路程、用时、速度，连接智能跑鞋可纪录步频，连接新一代手环可纪录心率。点击右上角进入“地图模式”，可以查看跑步轨迹。长按按钮暂停，之后有“继续”和“完成”选项。</p>
 <p>优点：可以将运动轨迹显示在地图上，增加产品趣味性。</p>
 <p>不足：跑步入口是首页左上角的一个图标，不容易被玩家发现，建议进行标记。</p>
 <p>（4）体重分析</p>
 <p>“状态”页面有体重变化简图。</p>
 <p>点击进入体重分析页面，使用折线图纪录体重变化情况，折线图下方展示BMI、具体体重、体重变化等数据，数据下方展示用户所在的体型标准阶段。</p>
-<p><a href="http://v.chanpin100.com/2016/05/%E5%B0%8F%E7%B1%B3%E8%BF%90%E5%8A%A8%E4%BA%A7%E5%93%81%E5%88%86%E6%9E%9017691.png"><img src="http://upload-images.jianshu.io/upload_images/1419060-a5779b0376d54de1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="小米运动产品分析1769"></a> </p>
+<p><a href="http://v.chanpin100.com/2016/05/%E5%B0%8F%E7%B1%B3%E8%BF%90%E5%8A%A8%E4%BA%A7%E5%93%81%E5%88%86%E6%9E%9017691.png"><img src="http://upload-images.jianshu.io/upload_images/1419060-a5779b0376d54de1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="小米运动产品分析1769"></a></p>
 <p>有添加家人的功能，允许纪录多人信息，每位成员有各自独立的体重分析页面。</p>
 <p>页面下方拥有手动纪录体重和抱婴称重功能。</p>
 <p>点击右上角图标，可以将体重信息分享到社交网络。</p>
@@ -160,36 +178,36 @@
 <p>（5）发现</p>
 <p>发现页面内有运动相关的活动与服务。报名并完成任务，即可得到奖励，有利于增加产品趣味性，提高用户粘性。</p>
 <p>1）步步宝</p>
-<p><a href="http://v.chanpin100.com/2016/05/%E5%B0%8F%E7%B1%B3%E8%BF%90%E5%8A%A8%E4%BA%A7%E5%93%81%E5%88%86%E6%9E%9020481.png"><img src="http://upload-images.jianshu.io/upload_images/1419060-8b51571bddeaefa4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="小米运动产品分析2048"></a> </p>
+<p><a href="http://v.chanpin100.com/2016/05/%E5%B0%8F%E7%B1%B3%E8%BF%90%E5%8A%A8%E4%BA%A7%E5%93%81%E5%88%86%E6%9E%9020481.png"><img src="http://upload-images.jianshu.io/upload_images/1419060-8b51571bddeaefa4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="小米运动产品分析2048"></a></p>
 <p>与众安保险合作，可将运动步数变现，换取重疾保障。</p>
 <p>2）肩颈减压大作战</p>
-<p><a href="http://v.chanpin100.com/2016/05/%E5%B0%8F%E7%B1%B3%E8%BF%90%E5%8A%A8%E4%BA%A7%E5%93%81%E5%88%86%E6%9E%902085.png"><img src="http://upload-images.jianshu.io/upload_images/1419060-40e4915f1a776185.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="小米运动产品分析2085"></a> </p>
+<p><a href="http://v.chanpin100.com/2016/05/%E5%B0%8F%E7%B1%B3%E8%BF%90%E5%8A%A8%E4%BA%A7%E5%93%81%E5%88%86%E6%9E%902085.png"><img src="http://upload-images.jianshu.io/upload_images/1419060-40e4915f1a776185.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="小米运动产品分析2085"></a></p>
 <p>达到行走目标，即可兑换奖品。</p>
 <p>3）米动训练中心</p>
-<p><a href="http://v.chanpin100.com/2016/05/%E5%B0%8F%E7%B1%B3%E8%BF%90%E5%8A%A8%E4%BA%A7%E5%93%81%E5%88%86%E6%9E%902110.png"><img src="http://upload-images.jianshu.io/upload_images/1419060-3dfa73cf17897bc7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="小米运动产品分析2110"></a> </p>
+<p><a href="http://v.chanpin100.com/2016/05/%E5%B0%8F%E7%B1%B3%E8%BF%90%E5%8A%A8%E4%BA%A7%E5%93%81%E5%88%86%E6%9E%902110.png"><img src="http://upload-images.jianshu.io/upload_images/1419060-3dfa73cf17897bc7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="小米运动产品分析2110"></a></p>
 <p>在这里可以设置强度较大的运动目标，对用户进行激励。</p>
 <p>3.2.2震动提醒</p>
 <p>（1）手环闹钟</p>
-<p><a href="http://v.chanpin100.com/2016/05/%E5%B0%8F%E7%B1%B3%E8%BF%90%E5%8A%A8%E4%BA%A7%E5%93%81%E5%88%86%E6%9E%902157.png"><img src="http://upload-images.jianshu.io/upload_images/1419060-f20831d763d8e458.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="小米运动产品分析2157"></a> </p>
+<p><a href="http://v.chanpin100.com/2016/05/%E5%B0%8F%E7%B1%B3%E8%BF%90%E5%8A%A8%E4%BA%A7%E5%93%81%E5%88%86%E6%9E%902157.png"><img src="http://upload-images.jianshu.io/upload_images/1419060-f20831d763d8e458.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="小米运动产品分析2157"></a></p>
 <p>闹钟最多可以设置3个。震动过程中敲击手环，闹钟即可停止。手环能检测到起床情况自动停止。闹钟每次震动5下，若没有停止动作，每10分钟震动一次。</p>
 <p>优点：</p>
 <p>限制闹钟个数，可以达到省电的效果，减少手环摘下的频率，从而增加用户粘性。</p>
 <p>不足：</p>
 <p>每次震动5下，对睡眠较深的用户起不到作用，且闹钟只能设置三个，没有手机闹钟方便。建议增加震动次数，或者允许用户自己设置震动次数。</p>
 <p>（2）来电提醒</p>
-<p><a href="http://v.chanpin100.com/2016/05/%E5%B0%8F%E7%B1%B3%E8%BF%90%E5%8A%A8%E4%BA%A7%E5%93%81%E5%88%86%E6%9E%9023511.png"><img src="http://upload-images.jianshu.io/upload_images/1419060-1f48e4e6d838706e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="小米运动产品分析2351"></a> </p>
+<p><a href="http://v.chanpin100.com/2016/05/%E5%B0%8F%E7%B1%B3%E8%BF%90%E5%8A%A8%E4%BA%A7%E5%93%81%E5%88%86%E6%9E%9023511.png"><img src="http://upload-images.jianshu.io/upload_images/1419060-1f48e4e6d838706e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="小米运动产品分析2351"></a></p>
 <p>“智玩”页面有来电提醒功能，功能开启后，可以设置延迟提醒，最多可延迟30秒。</p>
 <p>每次有未接来电，手环震动10下，敲击手环可停止震动。</p>
 <p>不足：震动次数太多，震动1-2次时即有感觉，建议减少震动次数。</p>
 <p>3.2.3社交</p>
 <p>（1）第三方接入</p>
-<p><a href="http://v.chanpin100.com/2016/05/%E5%B0%8F%E7%B1%B3%E8%BF%90%E5%8A%A8%E4%BA%A7%E5%93%81%E5%88%86%E6%9E%902471.png"><img src="http://upload-images.jianshu.io/upload_images/1419060-548500427c576933.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="小米运动产品分析2471"></a> </p>
+<p><a href="http://v.chanpin100.com/2016/05/%E5%B0%8F%E7%B1%B3%E8%BF%90%E5%8A%A8%E4%BA%A7%E5%93%81%E5%88%86%E6%9E%902471.png"><img src="http://upload-images.jianshu.io/upload_images/1419060-548500427c576933.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="小米运动产品分析2471"></a></p>
 <p>第三方接入可以与微信、QQ、苹果健康连接，接入微信后，步数信息会同步到“微信运动”中。</p>
 <p>（2）添加亲友</p>
 <p>进入“我的”页面，在最后面的“更多”板块中有“亲友”选项。亲友的添加通过通过扫描二维码实现，添加后可查看亲友的活动、睡眠数据。</p>
 <p>点击亲友进入详情页面，页面中显示亲友的运动、睡眠情况，点击“关爱TA”，对方手环会震动两次。</p>
-<p><a href="http://v.chanpin100.com/2016/05/%E5%B0%8F%E7%B1%B3%E8%BF%90%E5%8A%A8%E4%BA%A7%E5%93%81%E5%88%86%E6%9E%902639.png"><img src="http://upload-images.jianshu.io/upload_images/1419060-f55238c57280db70.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="小米运动产品分析2639"></a> </p>
-<p><a href="http://v.chanpin100.com/2016/05/%E5%B0%8F%E7%B1%B3%E8%BF%90%E5%8A%A8%E4%BA%A7%E5%93%81%E5%88%86%E6%9E%902641.png"><img src="http://upload-images.jianshu.io/upload_images/1419060-5dc6af18253baa32.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="小米运动产品分析2641"></a> </p>
+<p><a href="http://v.chanpin100.com/2016/05/%E5%B0%8F%E7%B1%B3%E8%BF%90%E5%8A%A8%E4%BA%A7%E5%93%81%E5%88%86%E6%9E%902639.png"><img src="http://upload-images.jianshu.io/upload_images/1419060-f55238c57280db70.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="小米运动产品分析2639"></a></p>
+<p><a href="http://v.chanpin100.com/2016/05/%E5%B0%8F%E7%B1%B3%E8%BF%90%E5%8A%A8%E4%BA%A7%E5%93%81%E5%88%86%E6%9E%902641.png"><img src="http://upload-images.jianshu.io/upload_images/1419060-5dc6af18253baa32.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="小米运动产品分析2641"></a></p>
 <p>优点：“关爱”功能设计新颖。</p>
 <p>不足：</p>
 <p>1）入口较深，不容易被用户发现，建议与“第三方接入”共同归类为社交，一起放入“趣玩”页面。</p>
@@ -198,11 +216,11 @@
 <p>MIUI系统上推出了手机解锁和无密码支付功能，由于手机系统限制无法进行体验。</p>
 <p>手机解锁和无密码支付功能意味着手环从手机配件到人体ID的转变，手环使用的便利性使用户也来越懒，一段时间后会不适应手动解锁、手动支付，对手环产生依赖，从而增加了用户粘性。</p>
 <p>3.2.5目标设置</p>
-<p><a href="http://v.chanpin100.com/2016/05/%E5%B0%8F%E7%B1%B3%E8%BF%90%E5%8A%A8%E4%BA%A7%E5%93%81%E5%88%86%E6%9E%9029001.png"><img src="http://upload-images.jianshu.io/upload_images/1419060-90b5873cad8b546c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="小米运动产品分析2900"></a> </p>
+<p><a href="http://v.chanpin100.com/2016/05/%E5%B0%8F%E7%B1%B3%E8%BF%90%E5%8A%A8%E4%BA%A7%E5%93%81%E5%88%86%E6%9E%9029001.png"><img src="http://upload-images.jianshu.io/upload_images/1419060-90b5873cad8b546c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="小米运动产品分析2900"></a></p>
 <p>目标设置在“我的”页面中，设置运动目标以千步为单位，设置体重目标在体重轴上滑动滚珠。</p>
 <p>优点：体重轴将不同体质设为不同颜色，直观显示目标体重的体质水平。</p>
 <p>不足：体重目标滚珠的滑动不易控制。</p>
-<p>## </p>
+<h2 id="-4"></h2>
 <p><strong>四、竞品分析</strong></p>
 <p>市场上与小米手环价格相近的是bong2手环，最新款有测心率功能的小米手环价格99元，bong2为129元，是性价比较高的两款产品。将两款手环进行对比分析。</p>
 <p><strong>1.生态链分析</strong></p>
@@ -210,14 +228,14 @@
 <p>bong的产品为智能手环和电子表，体重数据需要手动纪录。</p>
 <p><strong>2.功能分析</strong></p>
 <p>除记步、睡眠等基本功能外，bong2在运动状态识别方面功能更强大。两者对比见下表：</p>
-<p><a href="http://v.chanpin100.com/2016/05/127.jpg"><img src="http://upload-images.jianshu.io/upload_images/1419060-5a78f8b17b4d8aa6.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="1"></a> </p>
+<p><a href="http://v.chanpin100.com/2016/05/127.jpg"><img src="http://upload-images.jianshu.io/upload_images/1419060-5a78f8b17b4d8aa6.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="1"></a></p>
 <p><strong>3.外观对比</strong></p>
 <p>小米手环追踪器只有一种颜色，腕带有不同颜色，可以进行更换。</p>
 <p>Bong2手环只有一种黑色腕带，追踪器金、灰、红、蓝、黑、5种配色。</p>
-<p><a href="http://v.chanpin100.com/2016/05/%E5%B0%8F%E7%B1%B3%E8%BF%90%E5%8A%A8%E4%BA%A7%E5%93%81%E5%88%86%E6%9E%903564.png"><img src="http://upload-images.jianshu.io/upload_images/1419060-333a8da29fa16f6b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="小米运动产品分析3564"></a> </p>
+<p><a href="http://v.chanpin100.com/2016/05/%E5%B0%8F%E7%B1%B3%E8%BF%90%E5%8A%A8%E4%BA%A7%E5%93%81%E5%88%86%E6%9E%903564.png"><img src="http://upload-images.jianshu.io/upload_images/1419060-333a8da29fa16f6b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="小米运动产品分析3564"></a></p>
 <p>戴在手腕上后，由于小米手环的按扣是突出的，在工作时和桌面、电脑产生摩擦，而bong2的按扣是平的，不会产生摩擦问题。</p>
-<p><a href="http://v.chanpin100.com/2016/05/%E5%B0%8F%E7%B1%B3%E8%BF%90%E5%8A%A8%E4%BA%A7%E5%93%81%E5%88%86%E6%9E%9036261.png"><img src="http://upload-images.jianshu.io/upload_images/1419060-b404be0d7b281c89.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="小米运动产品分析3626"></a> </p>
-<p>## </p>
+<p><a href="http://v.chanpin100.com/2016/05/%E5%B0%8F%E7%B1%B3%E8%BF%90%E5%8A%A8%E4%BA%A7%E5%93%81%E5%88%86%E6%9E%9036261.png"><img src="http://upload-images.jianshu.io/upload_images/1419060-b404be0d7b281c89.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="小米运动产品分析3626"></a></p>
+<h2 id="-5"></h2>
 <p><strong>五、优化建议</strong></p>
 <p>1.加强对产品社交功能的打造，将“亲友”的位置提前，与“第三方接入”共同组成“互动”功能，放入“智玩”界面中。增加亲友的添加方式，允许账号添加等。</p>
 <p>2.睡眠监测增加睡眠质量分析功能，增加午睡监测功能。</p>
@@ -227,57 +245,82 @@
 <p>6.手环外形上，将突出的按扣改为平扣。</p>
 
             </div>
-          </article>
+            
+              <div class="tag-container">
+                
+                  <a href="https://SharingMan.github.io/tag/DtJgmX9oo" class="tag">
+                    产品
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://SharingMan.github.io/post/xiao-mi-quan-fang-wei-shen-du-jie-xi">
+                  <h3 class="post-title">
+                    小米全方位深度解析
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
         </div>
-    
-        
-          <div class="next-post">
-            <div class="next">下一篇</div>
-            <a href="https://SharingMan.github.io/post/xiao-mi-quan-fang-wei-shen-du-jie-xi">
-              <h3 class="post-title">
-                小米全方位深度解析
-              </h3>
-            </a>
-          </div>  
-        
-
-        
-          
-            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-
-<div id="gitalk-container"></div>
-
-<script>
-
-  var gitalk = new Gitalk({
-    clientID: '077dfb7156577dd3cc32',
-    clientSecret: '78906b0b9327799977ddac38548e452eedc230dc',
-    repo: 'SharingMan.github.io',
-    owner: 'SharingMan',
-    admin: ['SharingMan'],
-    id: location.pathname,      // Ensure uniqueness and length less than 50
-    distractionFreeMode: false  // Facebook-like distraction free mode
-  })
-
-  gitalk.render('gitalk-container')
-
-</script>
-
-          
-
-          
-        
-    
-        <div class="site-footer">
-  Powered by Hve Notes
-</div>
-
-<script>
-  hljs.initHighlightingOnLoad()
-</script>
-
       </div>
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+  
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '077dfb7156577dd3cc32',
+        clientSecret: '78906b0b9327799977ddac38548e452eedc230dc',
+        repo: 'SharingMan.github.io',
+        owner: 'SharingMan',
+        admin: ['SharingMan'],
+        id: location.pathname,      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
   </body>
 </html>

@@ -1,140 +1,184 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="description" content="" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" >
+
 <title>中标麒麟——初次体验，感觉流畅 | Xinhai Home</title>
+<meta name="description" content="求知若饥 虚心若愚">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
 <link rel="shortcut icon" href="https://SharingMan.github.io/favicon.ico">
 <link rel="stylesheet" href="https://SharingMan.github.io/styles/main.css">
 
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://SharingMan.github.io">
-  <img class="avatar" src="https://SharingMan.github.io/images/avatar.png" alt="" width="80px" height="80px">
-  </a>
-  <h1 class="site-title">
-    Xinhai Home
-  </h1>
-  <p class="site-description">
-    求知若饥 虚心若愚
-  </p>
-  <div class="menu-container">
-    
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://SharingMan.github.io">
+        <img src="https://SharingMan.github.io/images/avatar.png" class="site-logo">
+        <h1 class="site-title">Xinhai Home</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
       
-        <a href="/" class="menu">
-          首页
-        </a>
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
       
-    
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
       
-        <a href="/archives" class="menu">
-          归档
-        </a>
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
       
-    
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
       
-        <a href="/tags" class="menu">
-          标签
-        </a>
+        
+          <a href="https://github.com/SharingMan" class="site-nav">
+            Github
+          </a>
+        
       
-    
-      
-        <a href="/post/about" class="menu">
-          关于
-        </a>
-      
-    
-      
-        <a href="https://github.com/SharingMan" class="menu">
-          Github
-        </a>
-      
-    
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="site-description">
+      求知若饥 虚心若愚
+    </div>
+    <div class="site-footer">
+      Powered by Hve Notes
+    </div>
   </div>
 </div>
 
-      
-        <div class="post-detail">
-          <article class="post">
-            <h2 class="post-title">
-              中标麒麟——初次体验，感觉流畅
-            </h2>
-            <div class="post-info">
-              <time class="post-time">
-                · 2019-03-13 ·
-              </time>
-              
-                <a href="https://SharingMan.github.io/tag/DtJgmX9oo" class="post-tags">
-                  # 产品
-                </a>
-              
-            </div>
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">中标麒麟——初次体验，感觉流畅</h2>
+            <div class="post-date">2019-03-13</div>
+            
+              <div class="feature-container" style="background-image: url('https://SharingMan.github.io/post-images/zhong-biao-qi-lin-chu-ci-ti-yan-gan-jue-liu-chang.jpg')">
+              </div>
+            
             <div class="post-content">
               <p>安装试用国产系统 ——中标麒麟V7.0</h1></p>
 <p>下载完镜像，创建一个新的虚拟机</p><p>&nbsp;<img src="https://img-blog.csdn.net/20180325120000323?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM4NDM0ODA1/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p>配置好镜像文件，开始安装了</p><p>&nbsp;<img src="https://img-blog.csdn.net/20180325120019613?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM4NDM0ODA1/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><span style="font-family:'宋体';">这个倒是和一般的</span>Linux<span style="font-family:'宋体';">系统没什么区别，中标麒麟也是基于</span><span style="font-family:Calibri;">Linux </span><span style="font-family:'宋体';">的。</span></p><p>&nbsp;<img src="https://img-blog.csdn.net/20180325120028571?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM4NDM0ODA1/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p>加载十几秒，下面开始正式安装：</p><p>&nbsp;<img src="https://img-blog.csdn.net/20180325120036157?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM4NDM0ODA1/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p>&nbsp;<img src="https://img-blog.csdn.net/20180325120047298?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM4NDM0ODA1/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p>使用默认的分区就好了。</p><p>&nbsp;<img src="https://img-blog.csdn.net/20180325120057277?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM4NDM0ODA1/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p>&nbsp;<img src="https://img-blog.csdn.net/20180325120104438?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM4NDM0ODA1/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p>安装完成，重启一下。</p><p>&nbsp;<img src="https://img-blog.csdn.net/20180325120113497?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM4NDM0ODA1/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p>&nbsp;<img src="https://img-blog.csdn.net/20180325120134146?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM4NDM0ODA1/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p>然后是对系统进行简单的配置</p><p><br></p><p>登陆进去。</p><p>&nbsp;<img src="https://img-blog.csdn.net/20180325120142658?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM4NDM0ODA1/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p>中标麒麟系统的默认桌面：</p><p><span style="font-family:'宋体';">是不是特别像</span>Windows<span style="font-family:'宋体';">？</span></p><p>启动菜单栏也很像</p><p>&nbsp;<img src="https://img-blog.csdn.net/20180325120149435?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM4NDM0ODA1/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><span style="font-family:'宋体';">资源管理器也是，</span>C<span style="font-family:'宋体';">盘都出来了</span></p><p>&nbsp;<img src="https://img-blog.csdn.net/20180325120156269?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM4NDM0ODA1/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><span style="font-family:'宋体';">终端的名字也改为了命令提示符，和</span>Windows<span style="font-family:'宋体';">的名一样</span></p><p>&nbsp;</p><p>&nbsp;<img src="https://img-blog.csdn.net/20180325120203674?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM4NDM0ODA1/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p>&nbsp;</p><p><span style="font-family:'宋体';">打开</span>C<span style="font-family:'宋体';">盘之后，就可以看到</span><span style="font-family:Calibri;">C</span><span style="font-family:'宋体';">盘就等于根目录了</span></p><p>&nbsp;<img src="https://img-blog.csdn.net/20180325120212884?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM4NDM0ODA1/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><span style="font-family:'宋体';">系统的设置也是和</span>Windows<span style="font-family:'宋体';">的名字一样，都是控制面板</span></p><p><span style="font-family:'宋体';">里面的图标有的和</span>Linux<span style="font-family:'宋体';">系统一样，有的和</span><span style="font-family:Calibri;">Windows</span><span style="font-family:'宋体';">的一样</span></p><p>&nbsp;<img src="https://img-blog.csdn.net/20180325120221751?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM4NDM0ODA1/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><span style="font-family:'宋体';">按下</span>Windows+R<span style="font-family:'宋体';">，弹出来个运行程序的对话框，和</span><span style="font-family:Calibri;">Windows</span><span style="font-family:'宋体';">的运行几乎是一样的了</span></p><p>&nbsp;<img src="https://img-blog.csdn.net/20180325120229901?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM4NDM0ODA1/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><span style="font-family:'宋体';">按下</span>Ctrl+Alt+F2<span style="font-family:'宋体';">进入文字界面，然后就和一般的</span><span style="font-family:Calibri;">Linux</span><span style="font-family:'宋体';">系统没什么区别了</span></p><p><span style="font-family:'宋体';">然后用</span>gcc<span style="font-family:'宋体';">编译个</span><span style="font-family:Calibri;">hello World</span><span style="font-family:'宋体';">，嘿嘿嘿。</span></p><p>&nbsp;<img src="https://img-blog.csdn.net/20180325120235625?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM4NDM0ODA1/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p>&nbsp;<img src="https://img-blog.csdn.net/2018032512024435?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM4NDM0ODA1/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p><p><span style="font-family:'宋体';"><img src="https://img-blog.csdn.net/20180325120252894?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM4NDM0ODA1/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""><br></span></p><p><span style="font-family:'宋体';"></span>这是我第一次使用国产麒麟操作系统，从安装到运行程序均很流畅，也让我看到了国产系统的希望，后续还会对它进行更深度地测评，希望它也越来越好。
-
-<p>作者：新海，计算机网络专业大四学生，热爱互联网，热爱开源linux，致力于做出优秀产品。<span style="font-family:'宋体';"><br>                </div><br>    </article></p>
+<p>作者：新海，计算机网络专业大四学生，热爱互联网，热爱开源linux，致力于做出优秀产品。<span style="font-family:'宋体';">
+</div>
+</article></p>
 </div>
 
             </div>
-          </article>
+            
+              <div class="tag-container">
+                
+                  <a href="https://SharingMan.github.io/tag/DtJgmX9oo" class="tag">
+                    产品
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://SharingMan.github.io/post/jiao-ni-yong-netlify-jia-su-ni-de-github-pages-wang-ye-fang-wen-su-du">
+                  <h3 class="post-title">
+                    教你用Netlify加速你的Github pages 网页访问速度
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
         </div>
-    
-        
-          <div class="next-post">
-            <div class="next">下一篇</div>
-            <a href="https://SharingMan.github.io/post/jiao-ni-yong-netlify-jia-su-ni-de-github-pages-wang-ye-fang-wen-su-du">
-              <h3 class="post-title">
-                教你用Netlify加速你的Github pages 网页访问速度
-              </h3>
-            </a>
-          </div>  
-        
-
-        
-          
-            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-
-<div id="gitalk-container"></div>
-
-<script>
-
-  var gitalk = new Gitalk({
-    clientID: '077dfb7156577dd3cc32',
-    clientSecret: '78906b0b9327799977ddac38548e452eedc230dc',
-    repo: 'SharingMan.github.io',
-    owner: 'SharingMan',
-    admin: ['SharingMan'],
-    id: location.pathname,      // Ensure uniqueness and length less than 50
-    distractionFreeMode: false  // Facebook-like distraction free mode
-  })
-
-  gitalk.render('gitalk-container')
-
-</script>
-
-          
-
-          
-        
-    
-        <div class="site-footer">
-  Powered by Hve Notes
-</div>
-
-<script>
-  hljs.initHighlightingOnLoad()
-</script>
-
       </div>
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+  
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '077dfb7156577dd3cc32',
+        clientSecret: '78906b0b9327799977ddac38548e452eedc230dc',
+        repo: 'SharingMan.github.io',
+        owner: 'SharingMan',
+        admin: ['SharingMan'],
+        id: location.pathname,      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
   </body>
 </html>

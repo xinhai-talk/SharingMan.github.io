@@ -1,308 +1,320 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="description" content="" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" >
+
 <title>Xinhai Home</title>
+<meta name="description" content="求知若饥 虚心若愚">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
 <link rel="shortcut icon" href="https://SharingMan.github.io/favicon.ico">
 <link rel="stylesheet" href="https://SharingMan.github.io/styles/main.css">
 
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://SharingMan.github.io">
-  <img class="avatar" src="https://SharingMan.github.io/images/avatar.png" alt="" width="80px" height="80px">
-  </a>
-  <h1 class="site-title">
-    Xinhai Home
-  </h1>
-  <p class="site-description">
-    求知若饥 虚心若愚
-  </p>
-  <div class="menu-container">
-    
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://SharingMan.github.io">
+        <img src="https://SharingMan.github.io/images/avatar.png" class="site-logo">
+        <h1 class="site-title">Xinhai Home</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
       
-        <a href="/" class="menu">
-          首页
-        </a>
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
       
-    
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
       
-        <a href="/archives" class="menu">
-          归档
-        </a>
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
       
-    
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
       
-        <a href="/tags" class="menu">
-          标签
-        </a>
+        
+          <a href="https://github.com/SharingMan" class="site-nav">
+            Github
+          </a>
+        
       
-    
-      
-        <a href="/post/about" class="menu">
-          关于
-        </a>
-      
-    
-      
-        <a href="https://github.com/SharingMan" class="menu">
-          Github
-        </a>
-      
-    
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="site-description">
+      求知若饥 虚心若愚
+    </div>
+    <div class="site-footer">
+      Powered by Hve Notes
+    </div>
   </div>
 </div>
 
-    
-        <div class="post-container">
-  
-    <article class="post">
-      <a href="https://SharingMan.github.io/post/xin-hai-yu-xi-bao-de-gu-shi-xu-mu">
-        <h2 class="post-title">新海与猎豹的故事-序幕</h2>
-      </a>
-      <div class="post-info">
-        <time class="post-time">
-          · 2019-04-14 ·
-        </time>
-        
-      </div>
-      
-        <a href="https://SharingMan.github.io/post/xin-hai-yu-xi-bao-de-gu-shi-xu-mu" class="post-feature-image" style="background-image: url('https://SharingMan.github.io/post-images/xin-hai-yu-xi-bao-de-gu-shi-xu-mu.jpg')">
-        </a>
-      
-      <div class="post-abstract">
-        
-      </di>
-    </article>
-  
-    <article class="post">
-      <a href="https://SharingMan.github.io/post/bai-xiong-chan-pin-ti-yan">
-        <h2 class="post-title">白熊产品体验</h2>
-      </a>
-      <div class="post-info">
-        <time class="post-time">
-          · 2019-03-21 ·
-        </time>
-        
-      </div>
-      
-        <a href="https://SharingMan.github.io/post/bai-xiong-chan-pin-ti-yan" class="post-feature-image" style="background-image: url('https://SharingMan.github.io/post-images/bai-xiong-chan-pin-ti-yan.jpg')">
-        </a>
-      
-      <div class="post-abstract">
-        
-      </di>
-    </article>
-  
-    <article class="post">
-      <a href="https://SharingMan.github.io/post/zhong-biao-qi-lin-chu-ci-ti-yan-gan-jue-liu-chang">
-        <h2 class="post-title">中标麒麟——初次体验，感觉流畅</h2>
-      </a>
-      <div class="post-info">
-        <time class="post-time">
-          · 2019-03-13 ·
-        </time>
-        
-          <a href="https://SharingMan.github.io/tag/DtJgmX9oo" class="post-tag">
-            # 产品
-          </a>
-        
-      </div>
-      
-        <a href="https://SharingMan.github.io/post/zhong-biao-qi-lin-chu-ci-ti-yan-gan-jue-liu-chang" class="post-feature-image" style="background-image: url('https://SharingMan.github.io/post-images/zhong-biao-qi-lin-chu-ci-ti-yan-gan-jue-liu-chang.jpg')">
-        </a>
-      
-      <div class="post-abstract">
-        
-      </di>
-    </article>
-  
-    <article class="post">
-      <a href="https://SharingMan.github.io/post/jiao-ni-yong-netlify-jia-su-ni-de-github-pages-wang-ye-fang-wen-su-du">
-        <h2 class="post-title">教你用Netlify加速你的Github pages 网页访问速度</h2>
-      </a>
-      <div class="post-info">
-        <time class="post-time">
-          · 2019-03-07 ·
-        </time>
-        
-          <a href="https://SharingMan.github.io/tag/YYE8IHmeR" class="post-tag">
-            # 工具
-          </a>
-        
-      </div>
-      
-        <a href="https://SharingMan.github.io/post/jiao-ni-yong-netlify-jia-su-ni-de-github-pages-wang-ye-fang-wen-su-du" class="post-feature-image" style="background-image: url('https://SharingMan.github.io/post-images/jiao-ni-yong-netlify-jia-su-ni-de-github-pages-wang-ye-fang-wen-su-du.jpg')">
-        </a>
-      
-      <div class="post-abstract">
-        
-      </di>
-    </article>
-  
-    <article class="post">
-      <a href="https://SharingMan.github.io/post/xiao-mi-yun-dong-app-chan-pin-ti-yan-bao-gao">
-        <h2 class="post-title">小米运动app产品体验报告</h2>
-      </a>
-      <div class="post-info">
-        <time class="post-time">
-          · 2019-03-06 ·
-        </time>
-        
-          <a href="https://SharingMan.github.io/tag/DtJgmX9oo" class="post-tag">
-            # 产品
-          </a>
-        
-      </div>
-      
-        <a href="https://SharingMan.github.io/post/xiao-mi-yun-dong-app-chan-pin-ti-yan-bao-gao" class="post-feature-image" style="background-image: url('https://SharingMan.github.io/post-images/xiao-mi-yun-dong-app-chan-pin-ti-yan-bao-gao.png')">
-        </a>
-      
-      <div class="post-abstract">
-        
-      </di>
-    </article>
-  
-    <article class="post">
-      <a href="https://SharingMan.github.io/post/xiao-mi-quan-fang-wei-shen-du-jie-xi">
-        <h2 class="post-title">小米全方位深度解析</h2>
-      </a>
-      <div class="post-info">
-        <time class="post-time">
-          · 2019-03-06 ·
-        </time>
-        
-      </div>
-      
-        <a href="https://SharingMan.github.io/post/xiao-mi-quan-fang-wei-shen-du-jie-xi" class="post-feature-image" style="background-image: url('https://SharingMan.github.io/post-images/xiao-mi-quan-fang-wei-shen-du-jie-xi.jpg')">
-        </a>
-      
-      <div class="post-abstract">
-        <p>小米之道</p>
 
-      </di>
-    </article>
-  
-    <article class="post">
-      <a href="https://SharingMan.github.io/post/ru-he-shi-yong-markdown-xie-zuo">
-        <h2 class="post-title">如何使用Markdown写作？</h2>
-      </a>
-      <div class="post-info">
-        <time class="post-time">
-          · 2019-03-04 ·
-        </time>
-        
-          <a href="https://SharingMan.github.io/tag/YYE8IHmeR" class="post-tag">
-            # 工具
-          </a>
-        
-      </div>
-      
-        <a href="https://SharingMan.github.io/post/ru-he-shi-yong-markdown-xie-zuo" class="post-feature-image" style="background-image: url('https://SharingMan.github.io/post-images/ru-he-shi-yong-markdown-xie-zuo.jpg')">
-        </a>
-      
-      <div class="post-abstract">
-        <p>&nbsp;&nbsp;&nbsp;Markdown 是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。</p>
-      </di>
-    </article>
-  
-    <article class="post">
-      <a href="https://SharingMan.github.io/post/ru-he-shi-yong-typora">
-        <h2 class="post-title">如何使用typora？</h2>
-      </a>
-      <div class="post-info">
-        <time class="post-time">
-          · 2019-03-04 ·
-        </time>
-        
-          <a href="https://SharingMan.github.io/tag/YYE8IHmeR" class="post-tag">
-            # 工具
-          </a>
-        
-      </div>
-      
-        <a href="https://SharingMan.github.io/post/ru-he-shi-yong-typora" class="post-feature-image" style="background-image: url('https://SharingMan.github.io/post-images/ru-he-shi-yong-typora.jpg')">
-        </a>
-      
-      <div class="post-abstract">
-        <p>Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式，其目标是实现易读易写。我刚刚接触一款简单高效的Markdown编辑器–Typora，个人觉得非常好用，强烈推荐给大家。</p>
-      </di>
-    </article>
-  
-    <article class="post">
-      <a href="https://SharingMan.github.io/post/ru-he-shi-yong-sublime-text3">
-        <h2 class="post-title">如何使用sublime text3？</h2>
-      </a>
-      <div class="post-info">
-        <time class="post-time">
-          · 2019-03-04 ·
-        </time>
-        
-          <a href="https://SharingMan.github.io/tag/YYE8IHmeR" class="post-tag">
-            # 工具
-          </a>
-        
-      </div>
-      
-        <a href="https://SharingMan.github.io/post/ru-he-shi-yong-sublime-text3" class="post-feature-image" style="background-image: url('https://SharingMan.github.io/post-images/ru-he-shi-yong-sublime-text3.png')">
-        </a>
-      
-      <div class="post-abstract">
-        
-      </di>
-    </article>
-  
-    <article class="post">
-      <a href="https://SharingMan.github.io/post/hello-my-new-blog">
-        <h2 class="post-title">Hello My New Blog</h2>
-      </a>
-      <div class="post-info">
-        <time class="post-time">
-          · 2019-03-04 ·
-        </time>
-        
-          <a href="https://SharingMan.github.io/tag/QNDSmNubT" class="post-tag">
-            # 感想
-          </a>
-        
-      </div>
-      
-        <a href="https://SharingMan.github.io/post/hello-my-new-blog" class="post-feature-image" style="background-image: url('https://SharingMan.github.io/post-images/hello-my-new-blog.jpg')">
-        </a>
-      
-      <div class="post-abstract">
-        <p>今晚是个难忘的日子，自己仅凭一己之力，看着教程，搭建了正真意义上属于自己的的网页。</p>
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://SharingMan.github.io/post/xin-hai-yu-xi-bao-de-gu-shi-xu-mu">
+                  <h2 class="post-title">新海与猎豹的故事-序幕</h2>
+                </a>
+                <div class="post-date">
+                  2019-04-14
+                </div>
+                <div class="post-abstract">
+                  
+                </div>
+              </div>
+              
+                <a class="right" href="https://SharingMan.github.io/post/xin-hai-yu-xi-bao-de-gu-shi-xu-mu">
+                  <div class="feature-container" style="background-image: url('https://SharingMan.github.io/post-images/xin-hai-yu-xi-bao-de-gu-shi-xu-mu.jpg')">
+                  </div>
+                </a>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://SharingMan.github.io/post/bai-xiong-chan-pin-ti-yan">
+                  <h2 class="post-title">白熊产品体验</h2>
+                </a>
+                <div class="post-date">
+                  2019-03-21
+                </div>
+                <div class="post-abstract">
+                  
+                </div>
+              </div>
+              
+                <a class="right" href="https://SharingMan.github.io/post/bai-xiong-chan-pin-ti-yan">
+                  <div class="feature-container" style="background-image: url('https://SharingMan.github.io/post-images/bai-xiong-chan-pin-ti-yan.jpg')">
+                  </div>
+                </a>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://SharingMan.github.io/post/zhong-biao-qi-lin-chu-ci-ti-yan-gan-jue-liu-chang">
+                  <h2 class="post-title">中标麒麟——初次体验，感觉流畅</h2>
+                </a>
+                <div class="post-date">
+                  2019-03-13
+                </div>
+                <div class="post-abstract">
+                  
+                </div>
+              </div>
+              
+                <a class="right" href="https://SharingMan.github.io/post/zhong-biao-qi-lin-chu-ci-ti-yan-gan-jue-liu-chang">
+                  <div class="feature-container" style="background-image: url('https://SharingMan.github.io/post-images/zhong-biao-qi-lin-chu-ci-ti-yan-gan-jue-liu-chang.jpg')">
+                  </div>
+                </a>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://SharingMan.github.io/post/jiao-ni-yong-netlify-jia-su-ni-de-github-pages-wang-ye-fang-wen-su-du">
+                  <h2 class="post-title">教你用Netlify加速你的Github pages 网页访问速度</h2>
+                </a>
+                <div class="post-date">
+                  2019-03-07
+                </div>
+                <div class="post-abstract">
+                  
+                </div>
+              </div>
+              
+                <a class="right" href="https://SharingMan.github.io/post/jiao-ni-yong-netlify-jia-su-ni-de-github-pages-wang-ye-fang-wen-su-du">
+                  <div class="feature-container" style="background-image: url('https://SharingMan.github.io/post-images/jiao-ni-yong-netlify-jia-su-ni-de-github-pages-wang-ye-fang-wen-su-du.jpg')">
+                  </div>
+                </a>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://SharingMan.github.io/post/xiao-mi-yun-dong-app-chan-pin-ti-yan-bao-gao">
+                  <h2 class="post-title">小米运动app产品体验报告</h2>
+                </a>
+                <div class="post-date">
+                  2019-03-06
+                </div>
+                <div class="post-abstract">
+                  
+                </div>
+              </div>
+              
+                <a class="right" href="https://SharingMan.github.io/post/xiao-mi-yun-dong-app-chan-pin-ti-yan-bao-gao">
+                  <div class="feature-container" style="background-image: url('https://SharingMan.github.io/post-images/xiao-mi-yun-dong-app-chan-pin-ti-yan-bao-gao.png')">
+                  </div>
+                </a>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://SharingMan.github.io/post/xiao-mi-quan-fang-wei-shen-du-jie-xi">
+                  <h2 class="post-title">小米全方位深度解析</h2>
+                </a>
+                <div class="post-date">
+                  2019-03-06
+                </div>
+                <div class="post-abstract">
+                  <p>小米之道</p>
 
-      </di>
-    </article>
+                </div>
+              </div>
+              
+                <a class="right" href="https://SharingMan.github.io/post/xiao-mi-quan-fang-wei-shen-du-jie-xi">
+                  <div class="feature-container" style="background-image: url('https://SharingMan.github.io/post-images/xiao-mi-quan-fang-wei-shen-du-jie-xi.jpg')">
+                  </div>
+                </a>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://SharingMan.github.io/post/ru-he-shi-yong-markdown-xie-zuo">
+                  <h2 class="post-title">如何使用Markdown写作？</h2>
+                </a>
+                <div class="post-date">
+                  2019-03-04
+                </div>
+                <div class="post-abstract">
+                  <p>&nbsp;&nbsp;&nbsp;Markdown 是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。</p>
+                </div>
+              </div>
+              
+                <a class="right" href="https://SharingMan.github.io/post/ru-he-shi-yong-markdown-xie-zuo">
+                  <div class="feature-container" style="background-image: url('https://SharingMan.github.io/post-images/ru-he-shi-yong-markdown-xie-zuo.jpg')">
+                  </div>
+                </a>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://SharingMan.github.io/post/ru-he-shi-yong-typora">
+                  <h2 class="post-title">如何使用typora？</h2>
+                </a>
+                <div class="post-date">
+                  2019-03-04
+                </div>
+                <div class="post-abstract">
+                  <p>Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式，其目标是实现易读易写。我刚刚接触一款简单高效的Markdown编辑器–Typora，个人觉得非常好用，强烈推荐给大家。</p>
+                </div>
+              </div>
+              
+                <a class="right" href="https://SharingMan.github.io/post/ru-he-shi-yong-typora">
+                  <div class="feature-container" style="background-image: url('https://SharingMan.github.io/post-images/ru-he-shi-yong-typora.jpg')">
+                  </div>
+                </a>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://SharingMan.github.io/post/ru-he-shi-yong-sublime-text3">
+                  <h2 class="post-title">如何使用sublime text3？</h2>
+                </a>
+                <div class="post-date">
+                  2019-03-04
+                </div>
+                <div class="post-abstract">
+                  
+                </div>
+              </div>
+              
+                <a class="right" href="https://SharingMan.github.io/post/ru-he-shi-yong-sublime-text3">
+                  <div class="feature-container" style="background-image: url('https://SharingMan.github.io/post-images/ru-he-shi-yong-sublime-text3.png')">
+                  </div>
+                </a>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://SharingMan.github.io/post/hello-my-new-blog">
+                  <h2 class="post-title">Hello My New Blog</h2>
+                </a>
+                <div class="post-date">
+                  2019-03-04
+                </div>
+                <div class="post-abstract">
+                  <p>今晚是个难忘的日子，自己仅凭一己之力，看着教程，搭建了正真意义上属于自己的的网页。</p>
+
+                </div>
+              </div>
+              
+                <a class="right" href="https://SharingMan.github.io/post/hello-my-new-blog">
+                  <div class="feature-container" style="background-image: url('https://SharingMan.github.io/post-images/hello-my-new-blog.jpg')">
+                  </div>
+                </a>
+              
+            </article>
+          
+
+          <div class="pagination-container">
+  
+  
+    <a href="https://SharingMan.github.io/page/2/" class="next">下一页 <i class="icon-arrow-ios-forward-outline"></i></a>
   
 </div>
 
-    
-        <div class="pagination-container">
-  
-  
-    <a href="https://SharingMan.github.io/page/2/" class="prev-page">下一页</a>
-  
-</div>
-
-    
-        <div class="site-footer">
-  Powered by Hve Notes
-</div>
-
-<script>
-  hljs.initHighlightingOnLoad()
-</script>
-
+        </div>
       </div>
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
   </body>
 </html>

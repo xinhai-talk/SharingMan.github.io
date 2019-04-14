@@ -1,77 +1,99 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="description" content="" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" >
+
 <title>白熊产品体验 | Xinhai Home</title>
+<meta name="description" content="求知若饥 虚心若愚">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
 <link rel="shortcut icon" href="https://SharingMan.github.io/favicon.ico">
 <link rel="stylesheet" href="https://SharingMan.github.io/styles/main.css">
 
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://SharingMan.github.io">
-  <img class="avatar" src="https://SharingMan.github.io/images/avatar.png" alt="" width="80px" height="80px">
-  </a>
-  <h1 class="site-title">
-    Xinhai Home
-  </h1>
-  <p class="site-description">
-    求知若饥 虚心若愚
-  </p>
-  <div class="menu-container">
-    
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://SharingMan.github.io">
+        <img src="https://SharingMan.github.io/images/avatar.png" class="site-logo">
+        <h1 class="site-title">Xinhai Home</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
       
-        <a href="/" class="menu">
-          首页
-        </a>
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
       
-    
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
       
-        <a href="/archives" class="menu">
-          归档
-        </a>
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
       
-    
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
       
-        <a href="/tags" class="menu">
-          标签
-        </a>
+        
+          <a href="https://github.com/SharingMan" class="site-nav">
+            Github
+          </a>
+        
       
-    
-      
-        <a href="/post/about" class="menu">
-          关于
-        </a>
-      
-    
-      
-        <a href="https://github.com/SharingMan" class="menu">
-          Github
-        </a>
-      
-    
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="site-description">
+      求知若饥 虚心若愚
+    </div>
+    <div class="site-footer">
+      Powered by Hve Notes
+    </div>
   </div>
 </div>
 
-      
-        <div class="post-detail">
-          <article class="post">
-            <h2 class="post-title">
-              白熊产品体验
-            </h2>
-            <div class="post-info">
-              <time class="post-time">
-                · 2019-03-21 ·
-              </time>
-              
-            </div>
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">白熊产品体验</h2>
+            <div class="post-date">2019-03-21</div>
+            
+              <div class="feature-container" style="background-image: url('https://SharingMan.github.io/post-images/bai-xiong-chan-pin-ti-yan.jpg')">
+              </div>
+            
             <div class="post-content">
               <!DOCTYPE html>
 <html>
@@ -84,61 +106,77 @@
 </head>
 <body style="margin: 50px 20px;color: #333;font-family: 'Helvetica Neue','Hiragino Sans GB','WenQuanYi Micro Hei','Microsoft Yahei',sans-serif;">
 <div class="export-wrapper"><div style="font-size: 24px; padding: 20px 15px 0;"><div style="padding-bottom: 10px">白熊训练营课程体验</div><div style="background: #e5e6e8; height: 1px; margin-bottom: 20px;"></div></div><ul style="list-style: disc outside;"><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">界面</span><ul class="children" style="list-style: disc outside; padding-bottom: 4px;"><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">我的感受</span><ul class="children" style="list-style: disc outside; padding-bottom: 4px;"><li style="line-height: 22px;"><span class="content mubu-node" images="%5B%7B%22id%22%3A%2235f1699bca414e12e%22%2C%22uri%22%3A%22document_image%2F6e59cb8e-770f-4a44-b3a3-0d34ce0c27f3-44461.jpg%22%2C%22ow%22%3A1352%2C%22oh%22%3A654%2C%22w%22%3A587%7D%5D" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;"></span><div style="padding: 3px 0"><img src="https://img.mubu.com/document_image/6e59cb8e-770f-4a44-b3a3-0d34ce0c27f3-44461.jpg" style="max-width: 720px; width: 587px;" class="attach-img"></div></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">这是产品训练营的界面，采用扁平化的模块设计，清晰简约，用户界面友好。</span></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">色彩搭配上，白黄紫，简单大方，非常舒服</span></li></ul></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">界面主要大体分为三个模块</span><ul class="children" style="list-style: disc outside; padding-bottom: 4px;"><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">顶部的banner tab区，方便用户跳转到白熊其他功能界面。</span></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">左边的课程目录区</span></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">右边的排行榜和配套资料</span></li></ul></li></ul></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">功能</span><ul class="children" style="list-style: disc outside; padding-bottom: 4px;"><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">1.学习进度条</span><ul class="children" style="list-style: disc outside; padding-bottom: 4px;"><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">学习进度条的设计，让我们学习时不再有对未知的焦虑感，这一点是有考虑用户心理设计的。</span></li><li style="line-height: 22px;"><span class="content mubu-node" images="%5B%7B%22id%22%3A%221671699bc76160083%22%2C%22uri%22%3A%22document_image%2F8005dde6-b01d-4efd-af57-6e830fd7b183-44461.jpg%22%2C%22ow%22%3A674%2C%22oh%22%3A86%7D%5D" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;"></span><div style="padding: 3px 0"><img src="https://img.mubu.com/document_image/8005dde6-b01d-4efd-af57-6e830fd7b183-44461.jpg" style="max-width: 720px;" class="attach-img"></div></li></ul></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">2.课程目录设计</span><ul class="children" style="list-style: disc outside; padding-bottom: 4px;"><li style="line-height: 22px;"><span class="content mubu-node" images="%5B%7B%22id%22%3A%222df1699ba6b2c515-44461%22%2C%22uri%22%3A%22document_image%2Ff0f58bc4-b7bd-47c8-ab8e-0ae51575e570-44461.jpg%22%2C%22ow%22%3A624%2C%22oh%22%3A466%7D%5D" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">课程设计是将一节大课，拆分成诸多小的知识点，时间设计上最长都没有超过10min，学员学习也会更加专注。</span><div style="padding: 3px 0"><img src="https://img.mubu.com/document_image/f0f58bc4-b7bd-47c8-ab8e-0ae51575e570-44461.jpg" style="max-width: 720px;" class="attach-img"></div></li><li style="line-height: 22px;"><span class="content mubu-node" images="%5B%7B%22id%22%3A%222671699baa4cc1088-44461%22%2C%22uri%22%3A%22document_image%2F5b3226ea-007a-4af4-9781-4cd3f692df78-44461.jpg%22%2C%22ow%22%3A686%2C%22oh%22%3A332%2C%22w%22%3A496%7D%5D" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">听完的课程，左边的标签会打上√，没有听完的课程，就是球状，告诉我们我们还是“半吊子”，得抓紧学习呀，得把水装满才行呀。</span><div style="padding: 3px 0"><img src="https://img.mubu.com/document_image/5b3226ea-007a-4af4-9781-4cd3f692df78-44461.jpg" style="max-width: 720px; width: 496px;" class="attach-img"></div></li></ul></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">3.游戏化排名</span><ul class="children" style="list-style: disc outside; padding-bottom: 4px;"><li style="line-height: 22px;"><span class="content mubu-node" images="%5B%7B%22id%22%3A%223bc1699bb304d811b-44461%22%2C%22uri%22%3A%22document_image%2F4532edc6-ec8d-43f3-b642-707528c17df0-44461.jpg%22%2C%22ow%22%3A346%2C%22oh%22%3A666%2C%22w%22%3A231%7D%5D" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;"></span><div style="padding: 3px 0"><img src="https://img.mubu.com/document_image/4532edc6-ec8d-43f3-b642-707528c17df0-44461.jpg" style="max-width: 720px; width: 231px;" class="attach-img"></div></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">通过游戏积分的方式鼓励用户看视频，答题，评论，最终还有积分排名，这套游戏化的系统，正是在鼓励学员积极参与起来，学习就像打怪一样爽，一直学，一直爽，最后还能pk下，谁的积分高？</span></li></ul></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">4.听课界面设计</span><ul class="children" style="list-style: disc outside; padding-bottom: 4px;"><li style="line-height: 22px;"><span class="content mubu-node" images="%5B%7B%22id%22%3A%22331699bb806a80ea-44461%22%2C%22uri%22%3A%22document_image%2F3fc0ca90-f077-4443-8bd9-2910cfa98679-44461.jpg%22%2C%22ow%22%3A1350%2C%22oh%22%3A627%2C%22w%22%3A484%7D%5D" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;"></span><div style="padding: 3px 0"><img src="https://img.mubu.com/document_image/3fc0ca90-f077-4443-8bd9-2910cfa98679-44461.jpg" style="max-width: 720px; width: 484px;" class="attach-img"></div></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">听课界面，主要分为三个模块</span><ul class="children" style="list-style: disc outside; padding-bottom: 4px;"><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">1.视频播放模块</span><ul class="children" style="list-style: disc outside; padding-bottom: 4px;"><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">视频是放在白熊的自己的服务器上，加载速度蛮快，而且没有广告，还可以调整倍速，好评。</span></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">在播放时，视频后面的背景是黑色的，这样会让我们用户更加专注与视频，目前国内其他视频播放界面也都是黑色的，这不是没有道理的。</span></li></ul></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">2.评论答疑模块</span><ul class="children" style="list-style: disc outside; padding-bottom: 4px;"><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">我们学员看视频时，如果遇到不懂的地方，还可以向老师提问，老师会抽空回答</span></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">其余的学员看到后，有类似问题，可以在下面的评论区参考。</span></li></ul></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">3.目录导航</span><ul class="children" style="list-style: disc outside; padding-bottom: 4px;"><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">这个在国内视频播放界面区都会有的，白熊做的不错的一点就是可以标记出未看视频，正在看的视频，以及看完的视频，三种状态，避免用户重复观看，好评。</span></li></ul></li></ul></li></ul></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">6.作业实践</span><ul class="children" style="list-style: disc outside; padding-bottom: 4px;"><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">国内大多数微课，都不会设有作业这个界面，而往往我们听了很多课，确很少实践，行动跟不上，学过就忘，那自然而然学不好。</span></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">而在白熊，设计有作业系统，实践作品，让我们听完课就动手规划，行动，提交作业，知道做到。</span></li><li style="line-height: 22px;"><span class="content mubu-node" images="%5B%7B%22id%22%3A%223421699bc3ab08001-44461%22%2C%22uri%22%3A%22document_image%2Fc1476f54-bd50-46be-8769-5146615c4586-44461.jpg%22%2C%22ow%22%3A425%2C%22oh%22%3A589%2C%22w%22%3A245%7D%5D" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;"></span><div style="padding: 3px 0"><img src="https://img.mubu.com/document_image/c1476f54-bd50-46be-8769-5146615c4586-44461.jpg" style="max-width: 720px; width: 245px;" class="attach-img"></div></li></ul></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">7.资料包</span><ul class="children" style="list-style: disc outside; padding-bottom: 4px;"><li style="line-height: 22px;"><span class="content mubu-node" images="%5B%7B%22id%22%3A%2231c1699bc8acd50b2-44461%22%2C%22uri%22%3A%22document_image%2F3be00249-9669-436b-9c3a-0a9cc46a3bbb-44461.jpg%22%2C%22ow%22%3A348%2C%22oh%22%3A106%7D%5D" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;"></span><div style="padding: 3px 0"><img src="https://img.mubu.com/document_image/3be00249-9669-436b-9c3a-0a9cc46a3bbb-44461.jpg" style="max-width: 720px;" class="attach-img"></div></li><li style="line-height: 22px;"><span class="content mubu-node" images="%5B%7B%22id%22%3A%22c31699bc8e7dd059-44461%22%2C%22uri%22%3A%22document_image%2F2f26dcbb-f438-4335-9388-f6e19d276dcc-44461.jpg%22%2C%22ow%22%3A680%2C%22oh%22%3A644%2C%22w%22%3A410%7D%5D" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;"></span><div style="padding: 3px 0"><img src="https://img.mubu.com/document_image/2f26dcbb-f438-4335-9388-f6e19d276dcc-44461.jpg" style="max-width: 720px; width: 410px;" class="attach-img"></div></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">白熊非常贴心，还给我们准备了丰富的资料，可以在课后学习。</span></li></ul></li></ul></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">商业模式</span><ul class="children" style="list-style: disc outside; padding-bottom: 4px;"><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">采用399押金制</span></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">白熊CEO在课程中也说到，通过押金激励大家学习，只要大家能顺利完成课程，押金会全部返回。</span></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">但难免有同学完不成课程，最终退不了的押金就成了白熊学院的收益，这点上，白熊做的真心为学员考虑，越努力越免费，越不努力，那就掏钱吧，这点我喜欢。</span></li></ul></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">体验人</span><ul class="children" style="list-style: disc outside; padding-bottom: 4px;"><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">新海</span></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">计算机网络专业大四学生</span></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">热爱互联网，热爱产品，喜欢体验，始终相信，做出好的产品可以改变世界。</span></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">个人blog：<a class="content-link" target="_blank" rel="noreferrer" href="http://www.ixinhai.cn" style="text-decoration: underline; opacity: 0.6; color: inherit;">www.ixinhai.cn</a></span></li><li style="line-height: 22px;"><span class="content mubu-node" style="line-height: 22px; min-height: 22px; font-size: 14px; display: inline-block; vertical-align: top;">个人微信：gxh863155964（欢迎勾搭交流）</span></li></ul></li></ul></div>
-
 </body>
 </html>
             </div>
-          </article>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://SharingMan.github.io/post/zhong-biao-qi-lin-chu-ci-ti-yan-gan-jue-liu-chang">
+                  <h3 class="post-title">
+                    中标麒麟——初次体验，感觉流畅
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
         </div>
-    
-        
-          <div class="next-post">
-            <div class="next">下一篇</div>
-            <a href="https://SharingMan.github.io/post/zhong-biao-qi-lin-chu-ci-ti-yan-gan-jue-liu-chang">
-              <h3 class="post-title">
-                中标麒麟——初次体验，感觉流畅
-              </h3>
-            </a>
-          </div>  
-        
-
-        
-          
-            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-
-<div id="gitalk-container"></div>
-
-<script>
-
-  var gitalk = new Gitalk({
-    clientID: '077dfb7156577dd3cc32',
-    clientSecret: '78906b0b9327799977ddac38548e452eedc230dc',
-    repo: 'SharingMan.github.io',
-    owner: 'SharingMan',
-    admin: ['SharingMan'],
-    id: location.pathname,      // Ensure uniqueness and length less than 50
-    distractionFreeMode: false  // Facebook-like distraction free mode
-  })
-
-  gitalk.render('gitalk-container')
-
-</script>
-
-          
-
-          
-        
-    
-        <div class="site-footer">
-  Powered by Hve Notes
-</div>
-
-<script>
-  hljs.initHighlightingOnLoad()
-</script>
-
       </div>
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+  
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '077dfb7156577dd3cc32',
+        clientSecret: '78906b0b9327799977ddac38548e452eedc230dc',
+        repo: 'SharingMan.github.io',
+        owner: 'SharingMan',
+        admin: ['SharingMan'],
+        id: location.pathname,      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
   </body>
 </html>
